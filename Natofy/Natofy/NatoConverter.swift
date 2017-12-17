@@ -11,11 +11,12 @@ import Foundation
 struct Translation {
     let short: String
     let long: String
+    
+    
 }
 
 class NatoConverter {
     
-    //TODO: use only translation, make it it's own indexable element so indexOfObject works. (sequence protocol?)
     static let alphabetArray: [Translation] = [
         Translation(short: "A", long: "Alpha"),
         Translation(short: "B", long: "Bravo"),
@@ -56,49 +57,10 @@ class NatoConverter {
         Translation(short: "-", long: "Dash")
     ]
     
-    static let alphabetDict: [Character: String] = [
-        "A": "Alpha",
-        "B": "Bravo",
-        "C": "Charlie",
-        "D": "Delta",
-        "E": "Echo",
-        "F": "Foxtrot",
-        "G": "Golf",
-        "H": "Hotel",
-        "I": "India",
-        "J": "Juliett",
-        "K": "Kilo",
-        "L": "Lima",
-        "M": "Mike",
-        "N": "November",
-        "O": "Oscar",
-        "P": "Papa",
-        "Q": "Quebec",
-        "R": "Romeo",
-        "S": "Sierra",
-        "T": "Tango",
-        "U": "Uniform",
-        "V": "Victor",
-        "W": "Whiskey",
-        "X": "X-ray",
-        "Y": "Yankee",
-        "Z": "Zulu",
-        "0": "Zero",
-        "1": "One",
-        "2": "Two",
-        "3": "Three",
-        "4": "Four",
-        "5": "Five",
-        "6": "Six",
-        "7": "Seven",
-        "8": "Eight",
-        "9": "Nine",
-        "-": "Dash"
-    ]
-    
     static func convert(text: String) -> [String] {
         return text.uppercased().map { (c) -> String in
-            return NatoConverter.alphabetDict[c] ?? c.description
+            let translation = NatoConverter.alphabetArray.first(where: {$0.short.first == c})
+            return translation?.long ?? c.description
         }
     }
 }

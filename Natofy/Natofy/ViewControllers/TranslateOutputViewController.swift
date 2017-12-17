@@ -69,6 +69,8 @@ class TranslateOutputViewController: UIViewController {
         dataSource = translation
         tableView.reloadData()
         originalText = text
+        
+        PersistenceManager.saveLastTranslation(translation: translation)
     }
 }
 

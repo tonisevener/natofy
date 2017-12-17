@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676FBCF21FE6384F002932E0 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FBCF11FE6384F002932E0 /* PersistenceManager.swift */; };
+		676FBCF41FE63921002932E0 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */; };
 		6773588E1FE390FB009EF0BC /* TranslateOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */; };
 		677358911FE4E2C2009EF0BC /* TranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358901FE4E2C2009EF0BC /* TranslationTableViewCell.swift */; };
 		677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		676FBCF11FE6384F002932E0 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateOutputViewController.swift; sourceTree = "<group>"; };
 		677358901FE4E2C2009EF0BC /* TranslationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTableViewCell.swift; sourceTree = "<group>"; };
 		677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				67D6AFE41FE0F23400BAA0D6 /* Extensions */,
 				67D6AFDF1FE0F10600BAA0D6 /* ViewControllers */,
 				67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */,
+				676FBCF11FE6384F002932E0 /* PersistenceManager.swift */,
 				67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */,
 				67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */,
 				67D6AFB61FE0E1B600BAA0D6 /* Assets.xcassets */,
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				67D6AFE51FE0F24300BAA0D6 /* Collection+Extensions.swift */,
+				676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,8 +312,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */,
+				676FBCF21FE6384F002932E0 /* PersistenceManager.swift in Sources */,
 				67D6AFE81FE0F4A500BAA0D6 /* TranslateSplitViewController.swift in Sources */,
 				67D6AFE31FE0F13D00BAA0D6 /* AlphabetCollectionViewController.swift in Sources */,
+				676FBCF41FE63921002932E0 /* UIScrollView+Extensions.swift in Sources */,
 				67D6AFDE1FE0F10100BAA0D6 /* TranslateInputViewController.swift in Sources */,
 				677358911FE4E2C2009EF0BC /* TranslationTableViewCell.swift in Sources */,
 				6773588E1FE390FB009EF0BC /* TranslateOutputViewController.swift in Sources */,
