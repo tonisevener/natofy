@@ -41,8 +41,10 @@ class AlphabetCollectionViewController: UICollectionViewController {
         super.viewWillTransition(to: size, with: coordinator)
         
         //NOTE: This logic depends on (willTransition to newCollection) to be called before viewWillTransition(to size:)....is there a better way?
-        determineCellSize(traitCollection: futureSizeClass, size: size)
-        flowLayout.invalidateLayout()
+        if isViewLoaded {
+            determineCellSize(traitCollection: futureSizeClass, size: size)
+            flowLayout.invalidateLayout()
+        }
     }
 
     /*

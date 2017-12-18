@@ -26,6 +26,8 @@ class TranslateInputViewController: UIViewController {
 
     private var observers:[AnyObject] = []
     
+    let placeholderText = "Enter text to translate."
+    
     //MARK: Lifecycle
     
     override func viewDidLoad() {
@@ -33,6 +35,9 @@ class TranslateInputViewController: UIViewController {
 
         evaluateClipboardButton(parentSize: view.frame.size)
         evaluateGoButton()
+        
+        textView.textColor = .lightGray
+        textView.text = placeholderText
     }
     
     override func viewDidLayoutSubviews() {
@@ -93,6 +98,7 @@ private extension TranslateInputViewController {
         
         if let clipboardText = UIPasteboard.general.string {
             textView.text = clipboardText
+            textView.textColor = .black
             translate()
         }
     }
@@ -170,5 +176,19 @@ private extension TranslateInputViewController {
 extension TranslateInputViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         evaluateGoButton()
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == placeholderText {
+            textView.text = ""
+            textView.textColor = .black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text == "" {
+            textView.text = placeholderText
+            textView.textColor = .lightGray
+        }
     }
 }
