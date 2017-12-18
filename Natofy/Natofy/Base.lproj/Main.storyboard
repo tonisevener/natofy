@@ -148,11 +148,11 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="translatorLetterCellIdentifier" id="isf-Ra-qPI" customClass="TranslationTableViewCell" customModule="Natofy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isf-Ra-qPI" id="0iQ-Qp-Fbw">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="isf-Ra-qPI" id="0iQ-Qp-Fbw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWQ-lm-vxD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWQ-lm-vxD">
                                                     <rect key="frame" x="15" y="39" width="384" height="22"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <nil key="textColor"/>
@@ -207,11 +207,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JWx-v3-ymv"/>
                     </view>
-                    <navigationItem key="navigationItem" title=" " largeTitleDisplayMode="never" id="EbS-98-W2o"/>
+                    <navigationItem key="navigationItem" title=" " largeTitleDisplayMode="never" id="EbS-98-W2o">
+                        <barButtonItem key="rightBarButtonItem" title="Send To Watch" id="xEF-aB-D6h">
+                            <connections>
+                                <action selector="tappedSendToWatch:" destination="QK8-tW-21F" id="pq5-3A-Aiq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="originalTranslationLabel" destination="EFD-s6-jcN" id="pWh-7z-5co"/>
                         <outlet property="originalTranslationView" destination="ao7-bY-9pd" id="nqZ-UQ-caA"/>
                         <outlet property="originalTranslationViewTopConstraint" destination="lmv-eu-A9A" id="e8w-6u-BmV"/>
+                        <outlet property="sendToWatchButton" destination="xEF-aB-D6h" id="CzU-wi-0dS"/>
                         <outlet property="tableView" destination="9Xz-Sh-bOM" id="FP8-Ua-VGm"/>
                     </connections>
                 </viewController>

@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		676FBCF21FE6384F002932E0 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FBCF11FE6384F002932E0 /* PersistenceManager.swift */; };
+		67077DC21FE713B300C00B39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67077DC11FE713B300C00B39 /* Constants.swift */; };
+		67077DC31FE713B300C00B39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67077DC11FE713B300C00B39 /* Constants.swift */; };
 		676FBCF41FE63921002932E0 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */; };
 		6773588E1FE390FB009EF0BC /* TranslateOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */; };
 		677358911FE4E2C2009EF0BC /* TranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358901FE4E2C2009EF0BC /* TranslationTableViewCell.swift */; };
 		677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */; };
+		6778AEA51FE6E58700393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */; };
+		6778AEA81FE6E7CD00393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */; };
 		67D6AFAE1FE0E1B600BAA0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */; };
 		67D6AFB51FE0E1B600BAA0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */; };
 		67D6AFB71FE0E1B600BAA0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D6AFB61FE0E1B600BAA0D6 /* Assets.xcassets */; };
 		67D6AFBA1FE0E1B600BAA0D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D6AFB81FE0E1B600BAA0D6 /* LaunchScreen.storyboard */; };
 		67D6AFC51FE0E1B600BAA0D6 /* NatofyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFC41FE0E1B600BAA0D6 /* NatofyTests.swift */; };
-		67D6AFD01FE0E1B600BAA0D6 /* NatofyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFCF1FE0E1B600BAA0D6 /* NatofyUITests.swift */; };
 		67D6AFDE1FE0F10100BAA0D6 /* TranslateInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFDD1FE0F10100BAA0D6 /* TranslateInputViewController.swift */; };
 		67D6AFE31FE0F13D00BAA0D6 /* AlphabetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE21FE0F13D00BAA0D6 /* AlphabetCollectionViewController.swift */; };
 		67D6AFE61FE0F24300BAA0D6 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE51FE0F24300BAA0D6 /* Collection+Extensions.swift */; };
 		67D6AFE81FE0F4A500BAA0D6 /* TranslateSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE71FE0F4A500BAA0D6 /* TranslateSplitViewController.swift */; };
 		67D6AFEA1FE10DCE00BAA0D6 /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */; };
 		67D6AFEB1FE1118F00BAA0D6 /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */; };
+		67EDE9A91FE63A130046597D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EDE9A71FE63A130046597D /* Interface.storyboard */; };
+		67EDE9AB1FE63A130046597D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EDE9AA1FE63A130046597D /* Assets.xcassets */; };
+		67EDE9B21FE63A130046597D /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67EDE9B11FE63A130046597D /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67EDE9B91FE63A130046597D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EDE9B81FE63A130046597D /* ExtensionDelegate.swift */; };
+		67EDE9BB1FE63A130046597D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EDE9BA1FE63A130046597D /* Assets.xcassets */; };
+		67EDE9BF1FE63A130046597D /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 67EDE9A51FE63A130046597D /* Watch.app */; };
+		67EDE9C91FE63D1E0046597D /* TranslationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EDE9C81FE63D1E0046597D /* TranslationInterfaceController.swift */; };
+		67EDE9CC1FE63F8F0046597D /* TranslationRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EDE9CB1FE63F8F0046597D /* TranslationRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,21 +44,55 @@
 			remoteGlobalIDString = 67D6AFA91FE0E1B600BAA0D6;
 			remoteInfo = Natofy;
 		};
-		67D6AFCC1FE0E1B600BAA0D6 /* PBXContainerItemProxy */ = {
+		67EDE9B31FE63A130046597D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67D6AFA21FE0E1B600BAA0D6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 67D6AFA91FE0E1B600BAA0D6;
-			remoteInfo = Natofy;
+			remoteGlobalIDString = 67EDE9B01FE63A130046597D;
+			remoteInfo = "Watch Extension";
+		};
+		67EDE9BD1FE63A130046597D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67D6AFA21FE0E1B600BAA0D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67EDE9A41FE63A120046597D;
+			remoteInfo = Watch;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		67EDE9C51FE63A130046597D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67EDE9B21FE63A130046597D /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67EDE9C71FE63A130046597D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				67EDE9BF1FE63A130046597D /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		676FBCF11FE6384F002932E0 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		67077DC11FE713B300C00B39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateOutputViewController.swift; sourceTree = "<group>"; };
 		677358901FE4E2C2009EF0BC /* TranslationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationTableViewCell.swift; sourceTree = "<group>"; };
 		677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
+		6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		67D6AFAA1FE0E1B600BAA0D6 /* Natofy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natofy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D6AFB41FE0E1B600BAA0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +102,6 @@
 		67D6AFC01FE0E1B600BAA0D6 /* NatofyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatofyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D6AFC41FE0E1B600BAA0D6 /* NatofyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyTests.swift; sourceTree = "<group>"; };
 		67D6AFC61FE0E1B600BAA0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67D6AFCB1FE0E1B600BAA0D6 /* NatofyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatofyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D6AFCF1FE0E1B600BAA0D6 /* NatofyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyUITests.swift; sourceTree = "<group>"; };
 		67D6AFD11FE0E1B600BAA0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D6AFDD1FE0F10100BAA0D6 /* TranslateInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInputViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +109,18 @@
 		67D6AFE51FE0F24300BAA0D6 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		67D6AFE71FE0F4A500BAA0D6 /* TranslateSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateSplitViewController.swift; sourceTree = "<group>"; };
 		67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatoConverter.swift; sourceTree = "<group>"; };
+		67EDE9A51FE63A130046597D /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EDE9A81FE63A130046597D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		67EDE9AA1FE63A130046597D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67EDE9AC1FE63A130046597D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EDE9B11FE63A130046597D /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EDE9B81FE63A130046597D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		67EDE9BA1FE63A130046597D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67EDE9BC1FE63A130046597D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EDE9C81FE63D1E0046597D /* TranslationInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationInterfaceController.swift; sourceTree = "<group>"; };
+		67EDE9CB1FE63F8F0046597D /* TranslationRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRowController.swift; sourceTree = "<group>"; };
+		67EDE9CD1FE645D30046597D /* Natofy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Natofy.entitlements; sourceTree = "<group>"; };
+		67EDE9CE1FE6460C0046597D /* Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +138,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67D6AFC81FE0E1B600BAA0D6 /* Frameworks */ = {
+		67EDE9AE1FE63A130046597D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,6 +163,8 @@
 				67D6AFAC1FE0E1B600BAA0D6 /* Natofy */,
 				67D6AFC31FE0E1B600BAA0D6 /* NatofyTests */,
 				67D6AFCE1FE0E1B600BAA0D6 /* NatofyUITests */,
+				67EDE9A61FE63A130046597D /* Watch */,
+				67EDE9B51FE63A130046597D /* Watch Extension */,
 				67D6AFAB1FE0E1B600BAA0D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +174,8 @@
 			children = (
 				67D6AFAA1FE0E1B600BAA0D6 /* Natofy.app */,
 				67D6AFC01FE0E1B600BAA0D6 /* NatofyTests.xctest */,
-				67D6AFCB1FE0E1B600BAA0D6 /* NatofyUITests.xctest */,
+				67EDE9A51FE63A130046597D /* Watch.app */,
+				67EDE9B11FE63A130046597D /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,16 +183,18 @@
 		67D6AFAC1FE0E1B600BAA0D6 /* Natofy */ = {
 			isa = PBXGroup;
 			children = (
+				67EDE9CD1FE645D30046597D /* Natofy.entitlements */,
 				6773588F1FE4E2A9009EF0BC /* Views */,
 				67D6AFE41FE0F23400BAA0D6 /* Extensions */,
 				67D6AFDF1FE0F10600BAA0D6 /* ViewControllers */,
 				67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */,
-				676FBCF11FE6384F002932E0 /* PersistenceManager.swift */,
+				6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */,
 				67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */,
 				67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */,
 				67D6AFB61FE0E1B600BAA0D6 /* Assets.xcassets */,
 				67D6AFB81FE0E1B600BAA0D6 /* LaunchScreen.storyboard */,
 				67D6AFBB1FE0E1B600BAA0D6 /* Info.plist */,
+				67077DC11FE713B300C00B39 /* Constants.swift */,
 			);
 			path = Natofy;
 			sourceTree = "<group>";
@@ -177,6 +237,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		67EDE9A61FE63A130046597D /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				67EDE9A71FE63A130046597D /* Interface.storyboard */,
+				67EDE9AA1FE63A130046597D /* Assets.xcassets */,
+				67EDE9AC1FE63A130046597D /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		67EDE9B51FE63A130046597D /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67EDE9CE1FE6460C0046597D /* Watch Extension.entitlements */,
+				6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */,
+				67EDE9B81FE63A130046597D /* ExtensionDelegate.swift */,
+				67EDE9BA1FE63A130046597D /* Assets.xcassets */,
+				67EDE9BC1FE63A130046597D /* Info.plist */,
+				67EDE9C81FE63D1E0046597D /* TranslationInterfaceController.swift */,
+				67EDE9CB1FE63F8F0046597D /* TranslationRowController.swift */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,10 +271,12 @@
 				67D6AFA61FE0E1B600BAA0D6 /* Sources */,
 				67D6AFA71FE0E1B600BAA0D6 /* Frameworks */,
 				67D6AFA81FE0E1B600BAA0D6 /* Resources */,
+				67EDE9C71FE63A130046597D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67EDE9BE1FE63A130046597D /* PBXTargetDependency */,
 			);
 			name = Natofy;
 			productName = Natofy;
@@ -215,23 +301,39 @@
 			productReference = 67D6AFC01FE0E1B600BAA0D6 /* NatofyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		67D6AFCA1FE0E1B600BAA0D6 /* NatofyUITests */ = {
+		67EDE9A41FE63A120046597D /* Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67D6AFDA1FE0E1B600BAA0D6 /* Build configuration list for PBXNativeTarget "NatofyUITests" */;
+			buildConfigurationList = 67EDE9C61FE63A130046597D /* Build configuration list for PBXNativeTarget "Watch" */;
 			buildPhases = (
-				67D6AFC71FE0E1B600BAA0D6 /* Sources */,
-				67D6AFC81FE0E1B600BAA0D6 /* Frameworks */,
-				67D6AFC91FE0E1B600BAA0D6 /* Resources */,
+				67EDE9A31FE63A120046597D /* Resources */,
+				67EDE9C51FE63A130046597D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				67D6AFCD1FE0E1B600BAA0D6 /* PBXTargetDependency */,
+				67EDE9B41FE63A130046597D /* PBXTargetDependency */,
 			);
-			name = NatofyUITests;
-			productName = NatofyUITests;
-			productReference = 67D6AFCB1FE0E1B600BAA0D6 /* NatofyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = Watch;
+			productName = Watch;
+			productReference = 67EDE9A51FE63A130046597D /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		67EDE9B01FE63A130046597D /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67EDE9C41FE63A130046597D /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				67EDE9AD1FE63A130046597D /* Sources */,
+				67EDE9AE1FE63A130046597D /* Frameworks */,
+				67EDE9AF1FE63A130046597D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 67EDE9B11FE63A130046597D /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -245,17 +347,30 @@
 				TargetAttributes = {
 					67D6AFA91FE0E1B600BAA0D6 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					67D6AFBF1FE0E1B600BAA0D6 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 67D6AFA91FE0E1B600BAA0D6;
 					};
-					67D6AFCA1FE0E1B600BAA0D6 = {
+					67EDE9A41FE63A120046597D = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 67D6AFA91FE0E1B600BAA0D6;
+						ProvisioningStyle = Manual;
+					};
+					67EDE9B01FE63A130046597D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -274,7 +389,8 @@
 			targets = (
 				67D6AFA91FE0E1B600BAA0D6 /* Natofy */,
 				67D6AFBF1FE0E1B600BAA0D6 /* NatofyTests */,
-				67D6AFCA1FE0E1B600BAA0D6 /* NatofyUITests */,
+				67EDE9A41FE63A120046597D /* Watch */,
+				67EDE9B01FE63A130046597D /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -297,10 +413,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67D6AFC91FE0E1B600BAA0D6 /* Resources */ = {
+		67EDE9A31FE63A120046597D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EDE9AB1FE63A130046597D /* Assets.xcassets in Resources */,
+				67EDE9A91FE63A130046597D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67EDE9AF1FE63A130046597D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EDE9BB1FE63A130046597D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +438,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */,
-				676FBCF21FE6384F002932E0 /* PersistenceManager.swift in Sources */,
 				67D6AFE81FE0F4A500BAA0D6 /* TranslateSplitViewController.swift in Sources */,
 				67D6AFE31FE0F13D00BAA0D6 /* AlphabetCollectionViewController.swift in Sources */,
 				676FBCF41FE63921002932E0 /* UIScrollView+Extensions.swift in Sources */,
@@ -320,8 +445,10 @@
 				677358911FE4E2C2009EF0BC /* TranslationTableViewCell.swift in Sources */,
 				6773588E1FE390FB009EF0BC /* TranslateOutputViewController.swift in Sources */,
 				67D6AFEA1FE10DCE00BAA0D6 /* NatoConverter.swift in Sources */,
+				6778AEA51FE6E58700393C5E /* WatchSessionManager.swift in Sources */,
 				67D6AFAE1FE0E1B600BAA0D6 /* AppDelegate.swift in Sources */,
 				67D6AFE61FE0F24300BAA0D6 /* Collection+Extensions.swift in Sources */,
+				67077DC21FE713B300C00B39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +461,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67D6AFC71FE0E1B600BAA0D6 /* Sources */ = {
+		67EDE9AD1FE63A130046597D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D6AFD01FE0E1B600BAA0D6 /* NatofyUITests.swift in Sources */,
+				67077DC31FE713B300C00B39 /* Constants.swift in Sources */,
+				67EDE9CC1FE63F8F0046597D /* TranslationRowController.swift in Sources */,
+				67EDE9B91FE63A130046597D /* ExtensionDelegate.swift in Sources */,
+				6778AEA81FE6E7CD00393C5E /* WatchSessionManager.swift in Sources */,
+				67EDE9C91FE63D1E0046597D /* TranslationInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +481,15 @@
 			target = 67D6AFA91FE0E1B600BAA0D6 /* Natofy */;
 			targetProxy = 67D6AFC11FE0E1B600BAA0D6 /* PBXContainerItemProxy */;
 		};
-		67D6AFCD1FE0E1B600BAA0D6 /* PBXTargetDependency */ = {
+		67EDE9B41FE63A130046597D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67D6AFA91FE0E1B600BAA0D6 /* Natofy */;
-			targetProxy = 67D6AFCC1FE0E1B600BAA0D6 /* PBXContainerItemProxy */;
+			target = 67EDE9B01FE63A130046597D /* Watch Extension */;
+			targetProxy = 67EDE9B31FE63A130046597D /* PBXContainerItemProxy */;
+		};
+		67EDE9BE1FE63A130046597D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67EDE9A41FE63A120046597D /* Watch */;
+			targetProxy = 67EDE9BD1FE63A130046597D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -372,6 +508,14 @@
 				67D6AFB91FE0E1B600BAA0D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		67EDE9A71FE63A130046597D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67EDE9A81FE63A130046597D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,12 +632,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
 				INFOPLIST_FILE = Natofy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.Natofy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dca74abf-a156-408c-83b9-3125309775ec";
+				PROVISIONING_PROFILE_SPECIFIER = "Natofy Dev";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,12 +649,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Natofy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.Natofy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -519,12 +666,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
 				INFOPLIST_FILE = NatofyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.NatofyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = tonisevener.NatofyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natofy.app/Natofy";
@@ -536,47 +684,96 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NatofyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.NatofyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = tonisevener.NatofyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natofy.app/Natofy";
 			};
 			name = Release;
 		};
-		67D6AFDB1FE0E1B600BAA0D6 /* Debug */ = {
+		67EDE9C01FE63A130046597D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
-				INFOPLIST_FILE = NatofyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.NatofyUITests;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ae688199-6488-424c-bf7d-2a32a64e941e";
+				PROVISIONING_PROFILE_SPECIFIER = "Natofy Watch Dev";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Natofy;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
-		67D6AFDC1FE0E1B600BAA0D6 /* Release */ = {
+		67EDE9C11FE63A130046597D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QXP9WAJW7P;
-				INFOPLIST_FILE = NatofyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = toniSevener.NatofyUITests;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Natofy;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		67EDE9C21FE63A130046597D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "204a73dd-2754-47d3-b5c8-2acccade0acc";
+				PROVISIONING_PROFILE_SPECIFIER = "Natofy Watch Extension Dev";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		67EDE9C31FE63A130046597D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
 			name = Release;
 		};
@@ -610,11 +807,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67D6AFDA1FE0E1B600BAA0D6 /* Build configuration list for PBXNativeTarget "NatofyUITests" */ = {
+		67EDE9C41FE63A130046597D /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67D6AFDB1FE0E1B600BAA0D6 /* Debug */,
-				67D6AFDC1FE0E1B600BAA0D6 /* Release */,
+				67EDE9C21FE63A130046597D /* Debug */,
+				67EDE9C31FE63A130046597D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67EDE9C61FE63A130046597D /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67EDE9C01FE63A130046597D /* Debug */,
+				67EDE9C11FE63A130046597D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eS6-La-C53">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Natofy-->
+        <scene sceneID="gtu-W2-ryf">
+            <objects>
+                <controller identifier="Translation" title="Natofy" id="bxE-4i-yt1" customClass="TranslationInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="oQw-Po-IwX">
+                            <items>
+                                <tableRow identifier="TranslationRow" id="6xL-yw-bc5" customClass="TranslationRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="fth-xf-2dW">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="QmQ-Hb-nSi"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="translationLabel" destination="QmQ-Hb-nSi" id="M9r-cD-5cV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="translationTable" destination="oQw-Po-IwX" id="iv7-Tm-dvl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="23" y="34"/>
+        </scene>
+        <!--Natofy-->
+        <scene sceneID="fSs-9u-J3n">
+            <objects>
+                <controller identifier="Missing" title="Natofy" hidesWhenLoading="NO" id="eS6-La-C53">
+                    <items>
+                        <label width="136" height="163" alignment="left" numberOfLines="0" id="Nd7-XD-8E1">
+                            <string key="text">To see the latest translation,
+open iPhone app and tap the Send to Watch button</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="303.38461538461542" y="33.564102564102569"/>
+        </scene>
+    </scenes>
+</document>
