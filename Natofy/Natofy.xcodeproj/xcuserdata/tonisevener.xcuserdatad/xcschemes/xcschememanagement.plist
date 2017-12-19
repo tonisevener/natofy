@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Action Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Natofy Release.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>67CCC17A1FE8CF830063282E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>67D6AFA91FE0E1B600BAA0D6</key>
 		<dict>
 			<key>primary</key>

@@ -11,7 +11,7 @@ import UIKit
 class TranslateSplitViewController: UISplitViewController {
     
     var inputVC: TranslateInputViewController!
-    var outputVC: TranslateOutputViewController!
+    var containerOutputVC: TranslateOutputContainerViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,11 @@ class TranslateSplitViewController: UISplitViewController {
         
         if let navVC = viewControllers[safe: 0] as? UINavigationController,
         let inputVC = navVC.viewControllers[safe: 0] as? TranslateInputViewController,
-        let outputVC = viewControllers[safe: 1] as? TranslateOutputViewController {
+        let containerOutputVC = viewControllers[safe: 1] as? TranslateOutputContainerViewController {
             self.inputVC = inputVC
             inputVC.delegate = self
             
-            self.outputVC = outputVC
+            self.containerOutputVC = containerOutputVC
         } else {
             fatalError()
         }
@@ -42,7 +42,7 @@ extension TranslateSplitViewController: UISplitViewControllerDelegate {
 
 extension TranslateSplitViewController: TranslateInputViewControllerDelegate {
     func tappedTranslate(text: String) {
-        outputVC.reloadData(text: text)
-        showDetailViewController(outputVC, sender: nil)
+        containerOutputVC.reloadData(text: text)
+        showDetailViewController(containerOutputVC, sender: nil)
     }
 }

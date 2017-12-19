@@ -15,6 +15,17 @@
 		677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */; };
 		6778AEA51FE6E58700393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */; };
 		6778AEA81FE6E7CD00393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */; };
+		67CCC17E1FE8CF830063282E /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCC17D1FE8CF830063282E /* ActionViewController.swift */; };
+		67CCC1811FE8CF830063282E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CCC17F1FE8CF830063282E /* MainInterface.storyboard */; };
+		67CCC1851FE8CF830063282E /* Action Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67CCC17B1FE8CF830063282E /* Action Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		67CCC18B1FE8D2E40063282E /* Translation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CCC18A1FE8D2E40063282E /* Translation.storyboard */; };
+		67CCC18C1FE8D2EB0063282E /* Translation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CCC18A1FE8D2E40063282E /* Translation.storyboard */; };
+		67CCC18E1FE8D5D30063282E /* TranslateOutputContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCC18D1FE8D5D30063282E /* TranslateOutputContainerViewController.swift */; };
+		67CCC18F1FE8DF630063282E /* TranslateOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */; };
+		67CCC1901FE8DF930063282E /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE51FE0F24300BAA0D6 /* Collection+Extensions.swift */; };
+		67CCC1911FE8DF960063282E /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FBCF31FE63921002932E0 /* UIScrollView+Extensions.swift */; };
+		67CCC1921FE8DFA40063282E /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */; };
+		67CCC1931FE8DFAA0063282E /* TranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358901FE4E2C2009EF0BC /* TranslationTableViewCell.swift */; };
 		67D6AFAE1FE0E1B600BAA0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */; };
 		67D6AFB51FE0E1B600BAA0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */; };
 		67D6AFB71FE0E1B600BAA0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D6AFB61FE0E1B600BAA0D6 /* Assets.xcassets */; };
@@ -37,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		67CCC1831FE8CF830063282E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67D6AFA21FE0E1B600BAA0D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67CCC17A1FE8CF830063282E;
+			remoteInfo = "Action Extension";
+		};
 		67D6AFC11FE0E1B600BAA0D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67D6AFA21FE0E1B600BAA0D6 /* Project object */;
@@ -61,6 +79,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		67CCC1891FE8CF830063282E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67CCC1851FE8CF830063282E /* Action Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67EDE9C51FE63A130046597D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +122,12 @@
 		677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
 		6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		67CCC17B1FE8CF830063282E /* Action Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Action Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CCC17D1FE8CF830063282E /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		67CCC1801FE8CF830063282E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		67CCC1821FE8CF830063282E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67CCC18A1FE8D2E40063282E /* Translation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Translation.storyboard; sourceTree = "<group>"; };
+		67CCC18D1FE8D5D30063282E /* TranslateOutputContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateOutputContainerViewController.swift; sourceTree = "<group>"; };
 		67D6AFAA1FE0E1B600BAA0D6 /* Natofy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natofy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D6AFB41FE0E1B600BAA0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +159,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		67CCC1781FE8CF830063282E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67D6AFA71FE0E1B600BAA0D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +199,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		67CCC17C1FE8CF830063282E /* Action Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67CCC17D1FE8CF830063282E /* ActionViewController.swift */,
+				67CCC17F1FE8CF830063282E /* MainInterface.storyboard */,
+				67CCC1821FE8CF830063282E /* Info.plist */,
+			);
+			path = "Action Extension";
+			sourceTree = "<group>";
+		};
 		67D6AFA11FE0E1B600BAA0D6 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +217,7 @@
 				67D6AFCE1FE0E1B600BAA0D6 /* NatofyUITests */,
 				67EDE9A61FE63A130046597D /* Watch */,
 				67EDE9B51FE63A130046597D /* Watch Extension */,
+				67CCC17C1FE8CF830063282E /* Action Extension */,
 				67D6AFAB1FE0E1B600BAA0D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +229,7 @@
 				67D6AFC01FE0E1B600BAA0D6 /* NatofyTests.xctest */,
 				67EDE9A51FE63A130046597D /* Watch.app */,
 				67EDE9B11FE63A130046597D /* Watch Extension.appex */,
+				67CCC17B1FE8CF830063282E /* Action Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +244,7 @@
 				67D6AFE91FE10DCE00BAA0D6 /* NatoConverter.swift */,
 				6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */,
 				67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */,
+				67CCC18A1FE8D2E40063282E /* Translation.storyboard */,
 				67D6AFAD1FE0E1B600BAA0D6 /* AppDelegate.swift */,
 				67D6AFB61FE0E1B600BAA0D6 /* Assets.xcassets */,
 				67D6AFB81FE0E1B600BAA0D6 /* LaunchScreen.storyboard */,
@@ -224,6 +279,7 @@
 				67D6AFE21FE0F13D00BAA0D6 /* AlphabetCollectionViewController.swift */,
 				67D6AFE71FE0F4A500BAA0D6 /* TranslateSplitViewController.swift */,
 				6773588D1FE390FB009EF0BC /* TranslateOutputViewController.swift */,
+				67CCC18D1FE8D5D30063282E /* TranslateOutputContainerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,6 +320,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		67CCC17A1FE8CF830063282E /* Action Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67CCC1881FE8CF830063282E /* Build configuration list for PBXNativeTarget "Action Extension" */;
+			buildPhases = (
+				67CCC1771FE8CF830063282E /* Sources */,
+				67CCC1781FE8CF830063282E /* Frameworks */,
+				67CCC1791FE8CF830063282E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Action Extension";
+			productName = "Action Extension";
+			productReference = 67CCC17B1FE8CF830063282E /* Action Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		67D6AFA91FE0E1B600BAA0D6 /* Natofy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67D6AFD41FE0E1B600BAA0D6 /* Build configuration list for PBXNativeTarget "Natofy" */;
@@ -272,11 +345,13 @@
 				67D6AFA71FE0E1B600BAA0D6 /* Frameworks */,
 				67D6AFA81FE0E1B600BAA0D6 /* Resources */,
 				67EDE9C71FE63A130046597D /* Embed Watch Content */,
+				67CCC1891FE8CF830063282E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				67EDE9BE1FE63A130046597D /* PBXTargetDependency */,
+				67CCC1841FE8CF830063282E /* PBXTargetDependency */,
 			);
 			name = Natofy;
 			productName = Natofy;
@@ -345,6 +420,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Toni Sevener";
 				TargetAttributes = {
+					67CCC17A1FE8CF830063282E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
 					67D6AFA91FE0E1B600BAA0D6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
@@ -391,15 +470,26 @@
 				67D6AFBF1FE0E1B600BAA0D6 /* NatofyTests */,
 				67EDE9A41FE63A120046597D /* Watch */,
 				67EDE9B01FE63A130046597D /* Watch Extension */,
+				67CCC17A1FE8CF830063282E /* Action Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		67CCC1791FE8CF830063282E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CCC18C1FE8D2EB0063282E /* Translation.storyboard in Resources */,
+				67CCC1811FE8CF830063282E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67D6AFA81FE0E1B600BAA0D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CCC18B1FE8D2E40063282E /* Translation.storyboard in Resources */,
 				67D6AFBA1FE0E1B600BAA0D6 /* LaunchScreen.storyboard in Resources */,
 				67D6AFB71FE0E1B600BAA0D6 /* Assets.xcassets in Resources */,
 				67D6AFB51FE0E1B600BAA0D6 /* Main.storyboard in Resources */,
@@ -433,6 +523,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		67CCC1771FE8CF830063282E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CCC1921FE8DFA40063282E /* NatoConverter.swift in Sources */,
+				67CCC1931FE8DFAA0063282E /* TranslationTableViewCell.swift in Sources */,
+				67CCC18F1FE8DF630063282E /* TranslateOutputViewController.swift in Sources */,
+				67CCC17E1FE8CF830063282E /* ActionViewController.swift in Sources */,
+				67CCC1901FE8DF930063282E /* Collection+Extensions.swift in Sources */,
+				67CCC1911FE8DF960063282E /* UIScrollView+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67D6AFA61FE0E1B600BAA0D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +551,7 @@
 				6778AEA51FE6E58700393C5E /* WatchSessionManager.swift in Sources */,
 				67D6AFAE1FE0E1B600BAA0D6 /* AppDelegate.swift in Sources */,
 				67D6AFE61FE0F24300BAA0D6 /* Collection+Extensions.swift in Sources */,
+				67CCC18E1FE8D5D30063282E /* TranslateOutputContainerViewController.swift in Sources */,
 				67077DC21FE713B300C00B39 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +580,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		67CCC1841FE8CF830063282E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67CCC17A1FE8CF830063282E /* Action Extension */;
+			targetProxy = 67CCC1831FE8CF830063282E /* PBXContainerItemProxy */;
+		};
 		67D6AFC21FE0E1B600BAA0D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 67D6AFA91FE0E1B600BAA0D6 /* Natofy */;
@@ -494,6 +603,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		67CCC17F1FE8CF830063282E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67CCC1801FE8CF830063282E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		67D6AFB31FE0E1B600BAA0D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -521,6 +638,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		67CCC1861FE8CF830063282E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = "Action Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.actionextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "43e838e7-e4ae-4091-8454-228245cfa08e";
+				PROVISIONING_PROFILE_SPECIFIER = "Natofy Action Extension Dev";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67CCC1871FE8CF830063282E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = "Action Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.actionextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "033e05bd-dd46-4606-a984-183d446bb2e1";
+				PROVISIONING_PROFILE_SPECIFIER = "Natofy Action Extension Dist";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		67D6AFD21FE0E1B600BAA0D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +785,7 @@
 		67D6AFD51FE0E1B600BAA0D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
@@ -649,6 +804,7 @@
 		67D6AFD61FE0E1B600BAA0D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -788,6 +944,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		67CCC1881FE8CF830063282E /* Build configuration list for PBXNativeTarget "Action Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CCC1861FE8CF830063282E /* Debug */,
+				67CCC1871FE8CF830063282E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		67D6AFA51FE0E1B600BAA0D6 /* Build configuration list for PBXProject "Natofy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

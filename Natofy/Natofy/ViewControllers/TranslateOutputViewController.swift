@@ -14,9 +14,8 @@ class TranslateOutputViewController: UIViewController {
     @IBOutlet private var originalTranslationView: UIView!
     @IBOutlet private var originalTranslationLabel: UILabel!
     @IBOutlet private var originalTranslationViewTopConstraint: NSLayoutConstraint!
-    @IBOutlet var sendToWatchButton: UIBarButtonItem!
     
-    private var dataSource: [String] = []
+    public private(set) var dataSource: [String] = []
     private var originalText: String! {
         didSet {
             originalTranslationLabel.text = originalText
@@ -38,8 +37,6 @@ class TranslateOutputViewController: UIViewController {
          evaluateOriginalTextView(collection: traitCollection)
         
         setupNotifications()
-        
-        configureWatchButton(shouldShow: WatchSessionManager.sharedManager.shouldShowMessageOption(), shouldEnable: WatchSessionManager.sharedManager.shouldShowMessageOptionEnabled())
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -73,18 +70,6 @@ class TranslateOutputViewController: UIViewController {
         originalText = text
     }
     
-    @IBAction func tappedSendToWatch(_ sender: UIBarButtonItem) {
-        
-        if !WatchSessionManager.sharedManager.shouldShowMessageOptionEnabled() {
-            let alert = UIAlertController(title: "Open Watch app", message: "You must open the watch app to send this translation.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true, completion: nil)
-            return
-        }
-        
-        WatchSessionManager.sharedManager.sendMessage(message: [kLastTranslationKey: dataSource as AnyObject])
-    }
 }
 
 //MARK: Helpers
@@ -98,22 +83,7 @@ private extension TranslateOutputViewController {
             self.evaluateOriginalTextView(collection: self.traitCollection)
         })
         
-        let watchActiveNotification = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: kNotificationWatchIsActive), object: nil, queue: nil, using: { [unowned self] (notification) in
-            self.configureWatchButton(shouldShow: true, shouldEnable: true)
-        })
-        
-        let watchInActiveNotification = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: kNotificationWatchIsInActive), object: nil, queue: nil, using: { [unowned self] (notification) in
-            self.configureWatchButton(shouldShow: true, shouldEnable: false)
-        })
-        
         notifications.append(dynamicTypeChangeNotification)
-        notifications.append(watchActiveNotification)
-        notifications.append(watchInActiveNotification)
-    }
-    
-    func configureWatchButton(shouldShow: Bool, shouldEnable: Bool) {
-            sendToWatchButton.isEnabled = shouldShow
-            sendToWatchButton.tintColor = shouldShow ? (shouldEnable ? UIColor.blue : UIColor.gray) : UIColor.clear
     }
     
     func evaluateOriginalTextView(collection: UITraitCollection) {
