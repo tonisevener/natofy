@@ -15,6 +15,7 @@
 		677358931FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */; };
 		6778AEA51FE6E58700393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */; };
 		6778AEA81FE6E7CD00393C5E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */; };
+		67A37D941FE8EDE30083C405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A37D931FE8EDE30083C405 /* Assets.xcassets */; };
 		67CCC17E1FE8CF830063282E /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCC17D1FE8CF830063282E /* ActionViewController.swift */; };
 		67CCC1811FE8CF830063282E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CCC17F1FE8CF830063282E /* MainInterface.storyboard */; };
 		67CCC1851FE8CF830063282E /* Action Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 67CCC17B1FE8CF830063282E /* Action Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -122,6 +123,7 @@
 		677358921FE4ED7C009EF0BC /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
 		6778AEA41FE6E58700393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		6778AEA71FE6E7CD00393C5E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		67A37D931FE8EDE30083C405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67CCC17B1FE8CF830063282E /* Action Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Action Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CCC17D1FE8CF830063282E /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		67CCC1801FE8CF830063282E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				67CCC17D1FE8CF830063282E /* ActionViewController.swift */,
 				67CCC17F1FE8CF830063282E /* MainInterface.storyboard */,
 				67CCC1821FE8CF830063282E /* Info.plist */,
+				67A37D931FE8EDE30083C405 /* Assets.xcassets */,
 			);
 			path = "Action Extension";
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CCC18C1FE8D2EB0063282E /* Translation.storyboard in Resources */,
+				67A37D941FE8EDE30083C405 /* Assets.xcassets in Resources */,
 				67CCC1811FE8CF830063282E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +645,7 @@
 		67CCC1861FE8CF830063282E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
 				INFOPLIST_FILE = "Action Extension/Info.plist";
@@ -659,6 +664,7 @@
 		67CCC1871FE8CF830063282E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QXP9WAJW7P;
