@@ -31,7 +31,7 @@
 				<key>NSExtensionActivationDictionaryVersion</key>
 				<integer>1</integer>
 				<key>NSExtensionActivationSupportsText</key>
-				<integer>1</integer>
+				<true/>
 			</dict>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
