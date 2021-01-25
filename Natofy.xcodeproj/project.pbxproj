@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671BE4CA25BDFF7C00636495 /* NatofyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4C925BDFF7C00636495 /* NatofyApp.swift */; };
+		671BE4CC25BDFF7C00636495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4CB25BDFF7C00636495 /* ContentView.swift */; };
+		671BE4CE25BDFF7D00636495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE4CD25BDFF7D00636495 /* Assets.xcassets */; };
+		671BE4D125BDFF7D00636495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE4D025BDFF7D00636495 /* Preview Assets.xcassets */; };
+		671BE4DA25BE003C00636495 /* TranslateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4D925BE003C00636495 /* TranslateInputView.swift */; };
+		671BE4DD25BE064400636495 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4DC25BE064400636495 /* Color+Extensions.swift */; };
+		671BE4E025BE15DE00636495 /* TranslateTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4DF25BE15DE00636495 /* TranslateTextEditor.swift */; };
+		671BE4E325BE225500636495 /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E225BE225500636495 /* NatoConverter.swift */; };
+		671BE4E725BE229D00636495 /* TranslateOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E625BE229D00636495 /* TranslateOutputView.swift */; };
+		671BE4EA25BE290500636495 /* AlphabetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E925BE290500636495 /* AlphabetView.swift */; };
+		671BE4F325BE3BE300636495 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE4F225BE3BE300636495 /* Media.xcassets */; };
+		671BE4F525BE3BE300636495 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4F425BE3BE300636495 /* ActionViewController.swift */; };
+		671BE4F825BE3BE300636495 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671BE4F625BE3BE300636495 /* MainInterface.storyboard */; };
+		671BE4FC25BE3BE300636495 /* Natofy Action.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 671BE4F025BE3BE300636495 /* Natofy Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		671BE50625BE3DFC00636495 /* ActionWrapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE50525BE3DFC00636495 /* ActionWrapperViewController.swift */; };
+		671BE50D25BE3F6100636495 /* TranslationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE50C25BE3F6100636495 /* TranslationInput.swift */; };
+		671BE51025BE3F6600636495 /* TranslationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE50C25BE3F6100636495 /* TranslationInput.swift */; };
+		671BE51525BE410F00636495 /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E225BE225500636495 /* NatoConverter.swift */; };
+		671BE51F25BE486700636495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE51E25BE486700636495 /* Assets.xcassets */; };
+		671BE52625BE486800636495 /* Natofy Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 671BE52525BE486800636495 /* Natofy Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		671BE52B25BE486800636495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE52A25BE486800636495 /* ContentView.swift */; };
+		671BE52D25BE486800636495 /* NatofyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE52C25BE486800636495 /* NatofyApp.swift */; };
+		671BE53125BE486800636495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE53025BE486800636495 /* Assets.xcassets */; };
+		671BE53425BE486800636495 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671BE53325BE486800636495 /* Preview Assets.xcassets */; };
+		671BE53825BE486900636495 /* Natofy Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 671BE51C25BE486400636495 /* Natofy Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		671BE54D25BE495200636495 /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E225BE225500636495 /* NatoConverter.swift */; };
+		6730140B25BE54F500B3B562 /* WatchReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730140A25BE54F500B3B562 /* WatchReceiver.swift */; };
+		6730141525BE561200B3B562 /* WatchSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730141425BE561200B3B562 /* WatchSender.swift */; };
+		6730141F25BE574500B3B562 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730141E25BE574500B3B562 /* TranslationList.swift */; };
+		6730142525BE579600B3B562 /* ActionTranslateOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730142425BE579600B3B562 /* ActionTranslateOutputView.swift */; };
+		6730142A25BE57A500B3B562 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730141E25BE574500B3B562 /* TranslationList.swift */; };
+		67BD392125BE689D00205BFA /* NatofyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BD392025BE689D00205BFA /* NatofyTests.swift */; };
+		67BD392D25BE68E400205BFA /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E225BE225500636495 /* NatoConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		671BE4FA25BE3BE300636495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671BE4EF25BE3BE300636495;
+			remoteInfo = "Natofy Action";
+		};
+		671BE52725BE486800636495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671BE52425BE486800636495;
+			remoteInfo = "Natofy Watch Extension";
+		};
+		671BE53625BE486900636495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671BE51B25BE486400636495;
+			remoteInfo = "Natofy Watch";
+		};
+		67BD392325BE689D00205BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671BE4C525BDFF7C00636495;
+			remoteInfo = Natofy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		671BE50025BE3BE300636495 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				671BE4FC25BE3BE300636495 /* Natofy Action.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE53C25BE486900636495 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				671BE52625BE486800636495 /* Natofy Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE54025BE486900636495 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				671BE53825BE486900636495 /* Natofy Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		671BE4C625BDFF7C00636495 /* Natofy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Natofy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		671BE4C925BDFF7C00636495 /* NatofyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyApp.swift; sourceTree = "<group>"; };
+		671BE4CB25BDFF7C00636495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		671BE4CD25BDFF7D00636495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671BE4D025BDFF7D00636495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		671BE4D225BDFF7D00636495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671BE4D925BE003C00636495 /* TranslateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInputView.swift; sourceTree = "<group>"; };
+		671BE4DC25BE064400636495 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		671BE4DF25BE15DE00636495 /* TranslateTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateTextEditor.swift; sourceTree = "<group>"; };
+		671BE4E225BE225500636495 /* NatoConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatoConverter.swift; sourceTree = "<group>"; };
+		671BE4E625BE229D00636495 /* TranslateOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateOutputView.swift; sourceTree = "<group>"; };
+		671BE4E925BE290500636495 /* AlphabetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetView.swift; sourceTree = "<group>"; };
+		671BE4F025BE3BE300636495 /* Natofy Action.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Natofy Action.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671BE4F225BE3BE300636495 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		671BE4F425BE3BE300636495 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		671BE4F725BE3BE300636495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		671BE4F925BE3BE300636495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671BE50525BE3DFC00636495 /* ActionWrapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionWrapperViewController.swift; sourceTree = "<group>"; };
+		671BE50C25BE3F6100636495 /* TranslationInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationInput.swift; sourceTree = "<group>"; };
+		671BE51C25BE486400636495 /* Natofy Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natofy Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671BE51E25BE486700636495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671BE52025BE486700636495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671BE52525BE486800636495 /* Natofy Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Natofy Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671BE52A25BE486800636495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		671BE52C25BE486800636495 /* NatofyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyApp.swift; sourceTree = "<group>"; };
+		671BE53025BE486800636495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671BE53325BE486800636495 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		671BE53525BE486800636495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6730140A25BE54F500B3B562 /* WatchReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchReceiver.swift; sourceTree = "<group>"; };
+		6730141425BE561200B3B562 /* WatchSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSender.swift; sourceTree = "<group>"; };
+		6730141E25BE574500B3B562 /* TranslationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationList.swift; sourceTree = "<group>"; };
+		6730142425BE579600B3B562 /* ActionTranslateOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTranslateOutputView.swift; sourceTree = "<group>"; };
+		67BD391E25BE689D00205BFA /* NatofyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatofyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BD392025BE689D00205BFA /* NatofyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyTests.swift; sourceTree = "<group>"; };
+		67BD392225BE689D00205BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671BE4C325BDFF7C00636495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE4ED25BE3BE300636495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE52225BE486800636495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BD391B25BE689D00205BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671BE4BD25BDFF7C00636495 = {
+			isa = PBXGroup;
+			children = (
+				671BE4C825BDFF7C00636495 /* Natofy */,
+				671BE4F125BE3BE300636495 /* Natofy Action */,
+				671BE51D25BE486400636495 /* Natofy Watch */,
+				671BE52925BE486800636495 /* Natofy Watch Extension */,
+				67BD391F25BE689D00205BFA /* NatofyTests */,
+				671BE4C725BDFF7C00636495 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		671BE4C725BDFF7C00636495 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				671BE4C625BDFF7C00636495 /* Natofy.app */,
+				671BE4F025BE3BE300636495 /* Natofy Action.appex */,
+				671BE51C25BE486400636495 /* Natofy Watch.app */,
+				671BE52525BE486800636495 /* Natofy Watch Extension.appex */,
+				67BD391E25BE689D00205BFA /* NatofyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		671BE4C825BDFF7C00636495 /* Natofy */ = {
+			isa = PBXGroup;
+			children = (
+				671BE4C925BDFF7C00636495 /* NatofyApp.swift */,
+				671BE4CB25BDFF7C00636495 /* ContentView.swift */,
+				671BE4D925BE003C00636495 /* TranslateInputView.swift */,
+				671BE50C25BE3F6100636495 /* TranslationInput.swift */,
+				671BE4E625BE229D00636495 /* TranslateOutputView.swift */,
+				6730141E25BE574500B3B562 /* TranslationList.swift */,
+				671BE4E925BE290500636495 /* AlphabetView.swift */,
+				671BE4E225BE225500636495 /* NatoConverter.swift */,
+				671BE4DF25BE15DE00636495 /* TranslateTextEditor.swift */,
+				671BE4DC25BE064400636495 /* Color+Extensions.swift */,
+				6730141425BE561200B3B562 /* WatchSender.swift */,
+				671BE4CD25BDFF7D00636495 /* Assets.xcassets */,
+				671BE4D225BDFF7D00636495 /* Info.plist */,
+				671BE4CF25BDFF7D00636495 /* Preview Content */,
+			);
+			path = Natofy;
+			sourceTree = "<group>";
+		};
+		671BE4CF25BDFF7D00636495 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				671BE4D025BDFF7D00636495 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		671BE4F125BE3BE300636495 /* Natofy Action */ = {
+			isa = PBXGroup;
+			children = (
+				671BE4F225BE3BE300636495 /* Media.xcassets */,
+				671BE4F425BE3BE300636495 /* ActionViewController.swift */,
+				6730142425BE579600B3B562 /* ActionTranslateOutputView.swift */,
+				671BE50525BE3DFC00636495 /* ActionWrapperViewController.swift */,
+				671BE4F625BE3BE300636495 /* MainInterface.storyboard */,
+				671BE4F925BE3BE300636495 /* Info.plist */,
+			);
+			path = "Natofy Action";
+			sourceTree = "<group>";
+		};
+		671BE51D25BE486400636495 /* Natofy Watch */ = {
+			isa = PBXGroup;
+			children = (
+				671BE51E25BE486700636495 /* Assets.xcassets */,
+				671BE52025BE486700636495 /* Info.plist */,
+			);
+			path = "Natofy Watch";
+			sourceTree = "<group>";
+		};
+		671BE52925BE486800636495 /* Natofy Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				671BE52A25BE486800636495 /* ContentView.swift */,
+				671BE52C25BE486800636495 /* NatofyApp.swift */,
+				671BE53025BE486800636495 /* Assets.xcassets */,
+				671BE53525BE486800636495 /* Info.plist */,
+				671BE53225BE486800636495 /* Preview Content */,
+				6730140A25BE54F500B3B562 /* WatchReceiver.swift */,
+			);
+			path = "Natofy Watch Extension";
+			sourceTree = "<group>";
+		};
+		671BE53225BE486800636495 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				671BE53325BE486800636495 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67BD391F25BE689D00205BFA /* NatofyTests */ = {
+			isa = PBXGroup;
+			children = (
+				67BD392025BE689D00205BFA /* NatofyTests.swift */,
+				67BD392225BE689D00205BFA /* Info.plist */,
+			);
+			path = NatofyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		671BE4C525BDFF7C00636495 /* Natofy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671BE4D525BDFF7D00636495 /* Build configuration list for PBXNativeTarget "Natofy" */;
+			buildPhases = (
+				671BE4C225BDFF7C00636495 /* Sources */,
+				671BE4C325BDFF7C00636495 /* Frameworks */,
+				671BE4C425BDFF7C00636495 /* Resources */,
+				671BE50025BE3BE300636495 /* Embed App Extensions */,
+				671BE54025BE486900636495 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				671BE4FB25BE3BE300636495 /* PBXTargetDependency */,
+				671BE53725BE486900636495 /* PBXTargetDependency */,
+			);
+			name = Natofy;
+			productName = Natofy;
+			productReference = 671BE4C625BDFF7C00636495 /* Natofy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		671BE4EF25BE3BE300636495 /* Natofy Action */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671BE4FD25BE3BE300636495 /* Build configuration list for PBXNativeTarget "Natofy Action" */;
+			buildPhases = (
+				671BE4EC25BE3BE300636495 /* Sources */,
+				671BE4ED25BE3BE300636495 /* Frameworks */,
+				671BE4EE25BE3BE300636495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Natofy Action";
+			productName = "Natofy Action";
+			productReference = 671BE4F025BE3BE300636495 /* Natofy Action.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		671BE51B25BE486400636495 /* Natofy Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671BE53D25BE486900636495 /* Build configuration list for PBXNativeTarget "Natofy Watch" */;
+			buildPhases = (
+				671BE51A25BE486400636495 /* Resources */,
+				671BE53C25BE486900636495 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				671BE52825BE486800636495 /* PBXTargetDependency */,
+			);
+			name = "Natofy Watch";
+			productName = "Natofy Watch";
+			productReference = 671BE51C25BE486400636495 /* Natofy Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		671BE52425BE486800636495 /* Natofy Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671BE53925BE486900636495 /* Build configuration list for PBXNativeTarget "Natofy Watch Extension" */;
+			buildPhases = (
+				671BE52125BE486800636495 /* Sources */,
+				671BE52225BE486800636495 /* Frameworks */,
+				671BE52325BE486800636495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Natofy Watch Extension";
+			productName = "Natofy Watch Extension";
+			productReference = 671BE52525BE486800636495 /* Natofy Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		67BD391D25BE689D00205BFA /* NatofyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BD392725BE689D00205BFA /* Build configuration list for PBXNativeTarget "NatofyTests" */;
+			buildPhases = (
+				67BD391A25BE689D00205BFA /* Sources */,
+				67BD391B25BE689D00205BFA /* Frameworks */,
+				67BD391C25BE689D00205BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BD392425BE689D00205BFA /* PBXTargetDependency */,
+			);
+			name = NatofyTests;
+			productName = NatofyTests;
+			productReference = 67BD391E25BE689D00205BFA /* NatofyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		671BE4BE25BDFF7C00636495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					671BE4C525BDFF7C00636495 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					671BE4EF25BE3BE300636495 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					671BE51B25BE486400636495 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					671BE52425BE486800636495 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					67BD391D25BE689D00205BFA = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 671BE4C525BDFF7C00636495;
+					};
+				};
+			};
+			buildConfigurationList = 671BE4C125BDFF7C00636495 /* Build configuration list for PBXProject "Natofy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 671BE4BD25BDFF7C00636495;
+			productRefGroup = 671BE4C725BDFF7C00636495 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				671BE4C525BDFF7C00636495 /* Natofy */,
+				671BE4EF25BE3BE300636495 /* Natofy Action */,
+				671BE51B25BE486400636495 /* Natofy Watch */,
+				671BE52425BE486800636495 /* Natofy Watch Extension */,
+				67BD391D25BE689D00205BFA /* NatofyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		671BE4C425BDFF7C00636495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671BE4D125BDFF7D00636495 /* Preview Assets.xcassets in Resources */,
+				671BE4CE25BDFF7D00636495 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE4EE25BE3BE300636495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671BE4F325BE3BE300636495 /* Media.xcassets in Resources */,
+				671BE4F825BE3BE300636495 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE51A25BE486400636495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671BE51F25BE486700636495 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE52325BE486800636495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671BE53425BE486800636495 /* Preview Assets.xcassets in Resources */,
+				671BE53125BE486800636495 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BD391C25BE689D00205BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		671BE4C225BDFF7C00636495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671BE4E325BE225500636495 /* NatoConverter.swift in Sources */,
+				671BE4EA25BE290500636495 /* AlphabetView.swift in Sources */,
+				671BE4CC25BDFF7C00636495 /* ContentView.swift in Sources */,
+				671BE4DA25BE003C00636495 /* TranslateInputView.swift in Sources */,
+				671BE50D25BE3F6100636495 /* TranslationInput.swift in Sources */,
+				671BE4E725BE229D00636495 /* TranslateOutputView.swift in Sources */,
+				671BE4CA25BDFF7C00636495 /* NatofyApp.swift in Sources */,
+				6730141F25BE574500B3B562 /* TranslationList.swift in Sources */,
+				6730141525BE561200B3B562 /* WatchSender.swift in Sources */,
+				671BE4DD25BE064400636495 /* Color+Extensions.swift in Sources */,
+				671BE4E025BE15DE00636495 /* TranslateTextEditor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE4EC25BE3BE300636495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6730142525BE579600B3B562 /* ActionTranslateOutputView.swift in Sources */,
+				671BE51525BE410F00636495 /* NatoConverter.swift in Sources */,
+				671BE51025BE3F6600636495 /* TranslationInput.swift in Sources */,
+				671BE50625BE3DFC00636495 /* ActionWrapperViewController.swift in Sources */,
+				671BE4F525BE3BE300636495 /* ActionViewController.swift in Sources */,
+				6730142A25BE57A500B3B562 /* TranslationList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671BE52125BE486800636495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6730140B25BE54F500B3B562 /* WatchReceiver.swift in Sources */,
+				671BE54D25BE495200636495 /* NatoConverter.swift in Sources */,
+				671BE52D25BE486800636495 /* NatofyApp.swift in Sources */,
+				671BE52B25BE486800636495 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BD391A25BE689D00205BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BD392D25BE68E400205BFA /* NatoConverter.swift in Sources */,
+				67BD392125BE689D00205BFA /* NatofyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		671BE4FB25BE3BE300636495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671BE4EF25BE3BE300636495 /* Natofy Action */;
+			targetProxy = 671BE4FA25BE3BE300636495 /* PBXContainerItemProxy */;
+		};
+		671BE52825BE486800636495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671BE52425BE486800636495 /* Natofy Watch Extension */;
+			targetProxy = 671BE52725BE486800636495 /* PBXContainerItemProxy */;
+		};
+		671BE53725BE486900636495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671BE51B25BE486400636495 /* Natofy Watch */;
+			targetProxy = 671BE53625BE486900636495 /* PBXContainerItemProxy */;
+		};
+		67BD392425BE689D00205BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671BE4C525BDFF7C00636495 /* Natofy */;
+			targetProxy = 67BD392325BE689D00205BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		671BE4F625BE3BE300636495 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671BE4F725BE3BE300636495 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		671BE4D325BDFF7D00636495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		671BE4D425BDFF7D00636495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		671BE4D625BDFF7D00636495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Natofy/Preview Content\"";
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Natofy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		671BE4D725BDFF7D00636495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Natofy/Preview Content\"";
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Natofy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		671BE4FE25BE3BE300636495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = "Natofy Action/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.actionextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		671BE4FF25BE3BE300636495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = "Natofy Action/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.actionextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		671BE53A25BE486900636495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Natofy Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Natofy Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		671BE53B25BE486900636495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Natofy Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Natofy Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		671BE53E25BE486900636495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				IBSC_MODULE = Natofy_Watch_Extension;
+				INFOPLIST_FILE = "Natofy Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		671BE53F25BE486900636495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				IBSC_MODULE = Natofy_Watch_Extension;
+				INFOPLIST_FILE = "Natofy Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		67BD392525BE689D00205BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = NatofyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.NatofyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natofy.app/Natofy";
+			};
+			name = Debug;
+		};
+		67BD392625BE689D00205BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = NatofyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.NatofyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Natofy.app/Natofy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		671BE4C125BDFF7C00636495 /* Build configuration list for PBXProject "Natofy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671BE4D325BDFF7D00636495 /* Debug */,
+				671BE4D425BDFF7D00636495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671BE4D525BDFF7D00636495 /* Build configuration list for PBXNativeTarget "Natofy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671BE4D625BDFF7D00636495 /* Debug */,
+				671BE4D725BDFF7D00636495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671BE4FD25BE3BE300636495 /* Build configuration list for PBXNativeTarget "Natofy Action" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671BE4FE25BE3BE300636495 /* Debug */,
+				671BE4FF25BE3BE300636495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671BE53925BE486900636495 /* Build configuration list for PBXNativeTarget "Natofy Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671BE53A25BE486900636495 /* Debug */,
+				671BE53B25BE486900636495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671BE53D25BE486900636495 /* Build configuration list for PBXNativeTarget "Natofy Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671BE53E25BE486900636495 /* Debug */,
+				671BE53F25BE486900636495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BD392725BE689D00205BFA /* Build configuration list for PBXNativeTarget "NatofyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BD392525BE689D00205BFA /* Debug */,
+				67BD392625BE689D00205BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 671BE4BE25BDFF7C00636495 /* Project object */;
+}
