@@ -13,7 +13,13 @@ struct TranslateTextEditor: View {
     var body: some View {
         TextEditor(text: $textToTranslate)
             .frame(minWidth: textEditorWidth, idealWidth: textEditorWidth, maxWidth: textEditorWidth, minHeight: 50.0, idealHeight: 200.0, maxHeight: 200.0, alignment: .center)
-            .background(Color.systemGray3)
+            .background(Color.secondarySystemBackground)
+            .foregroundColor(self.textToTranslate == TranslationInput.placeholderString ? .secondary : .primary)
             .cornerRadius(10.0)
+            .onTapGesture {
+                if self.textToTranslate == TranslationInput.placeholderString {
+                  self.textToTranslate = ""
+                }
+            }
     }
 }

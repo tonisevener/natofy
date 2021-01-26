@@ -27,7 +27,7 @@ struct TranslateOutputView: View {
 struct TranslateOutputView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            TranslateOutputView(translationInput: TranslationInput(inputText: "testing"))
+            TranslateOutputView(translationInput: TranslationInput())
         }
     }
 }

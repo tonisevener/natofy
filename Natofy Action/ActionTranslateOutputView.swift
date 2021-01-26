@@ -19,7 +19,7 @@ struct ActionTranslateOutputView: View {
 struct ActionTranslateOutputView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ActionTranslateOutputView(translationInput: TranslationInput(inputText: "testing"))
+            ActionTranslateOutputView(translationInput: TranslationInput())
         }
     }
 }

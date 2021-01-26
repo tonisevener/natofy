@@ -8,9 +8,10 @@
 import Foundation
 
 class TranslationInput: ObservableObject {
-    @Published var text: String
+    static let placeholderString = "Enter text to translate."
+    @Published var text: String = placeholderString
     
-    init(inputText: String) {
+    init(inputText: String = placeholderString) {
         self.text = inputText
     }
 }

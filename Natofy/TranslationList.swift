@@ -15,13 +15,32 @@ struct TranslationList: View {
         NatoConverter.convert(text: translationInput.text)
     }
     
+    private let maxHeaderTextLength = 200
+    
+    private var headerText: String {
+        return translationInput.text.count > maxHeaderTextLength ? translationInput.text.prefix(maxHeaderTextLength) + "..." : translationInput.text
+    }
+    
     var body: some View {
         List {
-            Section(header: Text(translationInput.text)) {
+            Section(header: Text(headerText)
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    .textCase(.none)
+            ) {
                 ForEach(translationResult) { translation in
                     Text(translation.long)
+                        .font(.title2)
                 }
             }
         }
+    }
+}
+
+struct TranslationList_Previews: PreviewProvider {
+    static var previews: some View {
+        TranslationList(translationInput: TranslationInput(inputText: "testing"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12 mini"))
+            .previewDisplayName("iPhone 12 mini")
+            .environment(\.colorScheme, .dark)
     }
 }

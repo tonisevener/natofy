@@ -52,6 +52,8 @@ class ActionViewController: UIViewController {
                 break
             }
         }
+        
+        preferredContentSize = CGSize(width: super.preferredContentSize.width, height: CGFloat.infinity)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
