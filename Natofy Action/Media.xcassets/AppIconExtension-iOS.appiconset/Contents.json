@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "natofy-icon-40.png",
+      "filename" : "natofy-icon-action-40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "natofy-icon-60.png",
+      "filename" : "natofy-icon-action-60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "natofy-icon-58.png",
+      "filename" : "natofy-icon-action-58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "natofy-icon-87.png",
+      "filename" : "natofy-icon-action-87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "natofy-icon-80.png",
+      "filename" : "natofy-icon-action-80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "natofy-icon-120.png",
+      "filename" : "natofy-icon-action-120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "natofy-icon-121.png",
+      "filename" : "natofy-icon-action-121.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "natofy-icon-180.png",
+      "filename" : "natofy-icon-action-180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "natofy-icon-20.png",
+      "filename" : "natofy-icon-action-20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "natofy-icon-41.png",
+      "filename" : "natofy-icon-action-41.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "natofy-icon-29.png",
+      "filename" : "natofy-icon-action-29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "natofy-icon-59.png",
+      "filename" : "natofy-icon-action-59.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "natofy-icon-42.png",
+      "filename" : "natofy-icon-action-42.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "natofy-icon-81.png",
+      "filename" : "natofy-icon-action-81.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "natofy-icon-76.png",
+      "filename" : "natofy-icon-action-76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "natofy-icon-152.png",
+      "filename" : "natofy-icon-action-152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "natofy-icon-167.png",
+      "filename" : "natofy-icon-action-167.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "natofy-icon.png",
+      "filename" : "natofy-icon-action-1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
