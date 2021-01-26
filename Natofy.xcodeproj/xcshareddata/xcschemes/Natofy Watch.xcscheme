@@ -64,8 +64,10 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Natofy">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "671BE51B25BE486400636495"
@@ -73,7 +75,7 @@
             BlueprintName = "Natofy Watch"
             ReferencedContainer = "container:Natofy.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -81,8 +83,10 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Natofy">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "671BE51B25BE486400636495"
@@ -90,7 +94,16 @@
             BlueprintName = "Natofy Watch"
             ReferencedContainer = "container:Natofy.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "671BE51B25BE486400636495"
+            BuildableName = "Natofy Watch.app"
+            BlueprintName = "Natofy Watch"
+            ReferencedContainer = "container:Natofy.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
