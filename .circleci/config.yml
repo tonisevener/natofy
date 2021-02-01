@@ -11,4 +11,9 @@ jobs:
 
     steps:
       - checkout
-      - run: fastlane scan # Run tests using Fastlane
+      - run:
+          name: Run tests
+          command: fastlane scan
+          environment:
+            SCAN_DEVICE: iPhone 12 mini
+            SCAN_SCHEME: Natofy
