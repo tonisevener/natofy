@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "BC1CFD7B-54B1-479A-A30B-506A17CCA76A",
+      "name" : "EN-US",
+      "options" : {
+        "language" : "en",
+        "region" : "US"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Natofy.xcodeproj",
+        "identifier" : "67FC2E2525CA34B400097F6E",
+        "name" : "NatofyUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
