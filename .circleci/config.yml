@@ -18,7 +18,6 @@ jobs:
             SCAN_DEVICE: iPhone 12 mini
             SCAN_SCHEME: Natofy
             
-jobs:
   screenshots:
 
     macos:
