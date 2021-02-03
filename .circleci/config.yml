@@ -34,6 +34,12 @@ jobs:
           environment:
             SCAN_DEVICE: iPhone 12 mini
             SCAN_SCHEME: Natofy
+      - run:
+          name: Compress Artifacts
+          command: tar -cvzf screenshots.tar /tmp/screenshots
+      - store_artifacts:
+          path: screenshots.tar
+          destination: screenshots
 
 workflows:
   unit_tests:
