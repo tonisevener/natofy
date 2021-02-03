@@ -40,12 +40,5 @@ workflows:
     jobs:
       - unit_tests
   screenshots:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - screenshots-ci
     jobs:
       - screenshots
