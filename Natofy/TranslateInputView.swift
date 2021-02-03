@@ -57,6 +57,7 @@ struct TranslateInputView: View {
                             hideKeyboard()
                         }
                     })
+                    .accessibilityIdentifier(AccessibilityIdentifiers.translateButton.rawValue)
                     
                     Spacer()
                 }

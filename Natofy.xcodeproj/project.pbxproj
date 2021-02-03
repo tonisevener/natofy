@@ -38,8 +38,12 @@
 		6730141F25BE574500B3B562 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730141E25BE574500B3B562 /* TranslationList.swift */; };
 		6730142525BE579600B3B562 /* ActionTranslateOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730142425BE579600B3B562 /* ActionTranslateOutputView.swift */; };
 		6730142A25BE57A500B3B562 /* TranslationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6730141E25BE574500B3B562 /* TranslationList.swift */; };
+		6731A6FE25CA36160020561A /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FC2E0F25CA31FA00097F6E /* AccessibilityIdentifiers.swift */; };
 		67BD392125BE689D00205BFA /* NatofyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BD392025BE689D00205BFA /* NatofyTests.swift */; };
 		67BD392D25BE68E400205BFA /* NatoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BE4E225BE225500636495 /* NatoConverter.swift */; };
+		67FC2E1025CA31FA00097F6E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FC2E0F25CA31FA00097F6E /* AccessibilityIdentifiers.swift */; };
+		67FC2E1125CA31FA00097F6E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FC2E0F25CA31FA00097F6E /* AccessibilityIdentifiers.swift */; };
+		67FC2E3C25CA34C500097F6E /* NatofyScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FC2DFD25CA30EC00097F6E /* NatofyScreenshots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,13 @@
 			remoteInfo = "Natofy Watch";
 		};
 		67BD392325BE689D00205BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 671BE4C525BDFF7C00636495;
+			remoteInfo = Natofy;
+		};
+		67FC2E2B25CA34B400097F6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 671BE4BE25BDFF7C00636495 /* Project object */;
 			proxyType = 1;
@@ -145,6 +156,12 @@
 		67BD391E25BE689D00205BFA /* NatofyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatofyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BD392025BE689D00205BFA /* NatofyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyTests.swift; sourceTree = "<group>"; };
 		67BD392225BE689D00205BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67FC2DF725CA30C200097F6E /* Natofy.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Natofy.xctestplan; sourceTree = "<group>"; };
+		67FC2DFD25CA30EC00097F6E /* NatofyScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatofyScreenshots.swift; sourceTree = "<group>"; };
+		67FC2E0F25CA31FA00097F6E /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		67FC2E2625CA34B400097F6E /* NatofyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatofyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FC2E2A25CA34B400097F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67FC2E4925CA351F00097F6E /* NatofyScreenshots.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NatofyScreenshots.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +193,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67FC2E2325CA34B400097F6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -187,6 +211,7 @@
 				671BE51D25BE486400636495 /* Natofy Watch */,
 				671BE52925BE486800636495 /* Natofy Watch Extension */,
 				67BD391F25BE689D00205BFA /* NatofyTests */,
+				67FC2E2725CA34B400097F6E /* NatofyUITests */,
 				671BE4C725BDFF7C00636495 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,6 +224,7 @@
 				671BE51C25BE486400636495 /* Natofy Watch.app */,
 				671BE52525BE486800636495 /* Natofy Watch Extension.appex */,
 				67BD391E25BE689D00205BFA /* NatofyTests.xctest */,
+				67FC2E2625CA34B400097F6E /* NatofyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +246,7 @@
 				671BE4CD25BDFF7D00636495 /* Assets.xcassets */,
 				671BE4D225BDFF7D00636495 /* Info.plist */,
 				671BE4CF25BDFF7D00636495 /* Preview Content */,
+				67FC2E0F25CA31FA00097F6E /* AccessibilityIdentifiers.swift */,
 			);
 			path = Natofy;
 			sourceTree = "<group>";
@@ -278,10 +305,21 @@
 		67BD391F25BE689D00205BFA /* NatofyTests */ = {
 			isa = PBXGroup;
 			children = (
+				67FC2DF725CA30C200097F6E /* Natofy.xctestplan */,
 				67BD392025BE689D00205BFA /* NatofyTests.swift */,
 				67BD392225BE689D00205BFA /* Info.plist */,
 			);
 			path = NatofyTests;
+			sourceTree = "<group>";
+		};
+		67FC2E2725CA34B400097F6E /* NatofyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67FC2E4925CA351F00097F6E /* NatofyScreenshots.xctestplan */,
+				67FC2DFD25CA30EC00097F6E /* NatofyScreenshots.swift */,
+				67FC2E2A25CA34B400097F6E /* Info.plist */,
+			);
+			path = NatofyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,13 +415,31 @@
 			productReference = 67BD391E25BE689D00205BFA /* NatofyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		67FC2E2525CA34B400097F6E /* NatofyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67FC2E2D25CA34B400097F6E /* Build configuration list for PBXNativeTarget "NatofyUITests" */;
+			buildPhases = (
+				67FC2E2225CA34B400097F6E /* Sources */,
+				67FC2E2325CA34B400097F6E /* Frameworks */,
+				67FC2E2425CA34B400097F6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67FC2E2C25CA34B400097F6E /* PBXTargetDependency */,
+			);
+			name = NatofyUITests;
+			productName = NatofyUITests;
+			productReference = 67FC2E2625CA34B400097F6E /* NatofyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		671BE4BE25BDFF7C00636495 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					671BE4C525BDFF7C00636495 = {
@@ -400,6 +456,10 @@
 					};
 					67BD391D25BE689D00205BFA = {
 						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 671BE4C525BDFF7C00636495;
+					};
+					67FC2E2525CA34B400097F6E = {
+						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 671BE4C525BDFF7C00636495;
 					};
 				};
@@ -422,6 +482,7 @@
 				671BE51B25BE486400636495 /* Natofy Watch */,
 				671BE52425BE486800636495 /* Natofy Watch Extension */,
 				67BD391D25BE689D00205BFA /* NatofyTests */,
+				67FC2E2525CA34B400097F6E /* NatofyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -469,6 +530,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67FC2E2425CA34B400097F6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -479,6 +547,7 @@
 				671BE4E325BE225500636495 /* NatoConverter.swift in Sources */,
 				671BE4EA25BE290500636495 /* AlphabetView.swift in Sources */,
 				671BE4CC25BDFF7C00636495 /* ContentView.swift in Sources */,
+				67FC2E1025CA31FA00097F6E /* AccessibilityIdentifiers.swift in Sources */,
 				671BE4DA25BE003C00636495 /* TranslateInputView.swift in Sources */,
 				671BE50D25BE3F6100636495 /* TranslationInput.swift in Sources */,
 				671BE4E725BE229D00636495 /* TranslateOutputView.swift in Sources */,
@@ -498,6 +567,7 @@
 				671BE51525BE410F00636495 /* NatoConverter.swift in Sources */,
 				671BE51025BE3F6600636495 /* TranslationInput.swift in Sources */,
 				671BE50625BE3DFC00636495 /* ActionWrapperViewController.swift in Sources */,
+				67FC2E1125CA31FA00097F6E /* AccessibilityIdentifiers.swift in Sources */,
 				671BE4F525BE3BE300636495 /* ActionViewController.swift in Sources */,
 				6730142A25BE57A500B3B562 /* TranslationList.swift in Sources */,
 			);
@@ -523,6 +593,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67FC2E2225CA34B400097F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67FC2E3C25CA34C500097F6E /* NatofyScreenshots.swift in Sources */,
+				6731A6FE25CA36160020561A /* AccessibilityIdentifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -545,6 +624,11 @@
 			isa = PBXTargetDependency;
 			target = 671BE4C525BDFF7C00636495 /* Natofy */;
 			targetProxy = 67BD392325BE689D00205BFA /* PBXContainerItemProxy */;
+		};
+		67FC2E2C25CA34B400097F6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 671BE4C525BDFF7C00636495 /* Natofy */;
+			targetProxy = 67FC2E2B25CA34B400097F6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -906,6 +990,46 @@
 			};
 			name = Release;
 		};
+		67FC2E2E25CA34B400097F6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = NatofyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.NatofyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Natofy;
+			};
+			name = Debug;
+		};
+		67FC2E2F25CA34B400097F6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXP9WAJW7P;
+				INFOPLIST_FILE = NatofyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonisevener.natofy.NatofyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Natofy;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -959,6 +1083,15 @@
 			buildConfigurations = (
 				67BD392525BE689D00205BFA /* Debug */,
 				67BD392625BE689D00205BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67FC2E2D25CA34B400097F6E /* Build configuration list for PBXNativeTarget "NatofyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67FC2E2E25CA34B400097F6E /* Debug */,
+				67FC2E2F25CA34B400097F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

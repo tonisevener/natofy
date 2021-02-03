@@ -53,6 +53,16 @@
                ReferencedContainer = "container:Natofy.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "67FC2E2525CA34B400097F6E"
+               BuildableName = "NatofyUITests.xctest"
+               BlueprintName = "NatofyUITests"
+               ReferencedContainer = "container:Natofy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "9E39A1CB-FFE3-480D-B45F-6E5DF232550A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Natofy.xcodeproj",
+      "identifier" : "671BE4C525BDFF7C00636495",
+      "name" : "Natofy"
+    }
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "NatofyScreenshots"
+      ],
+      "target" : {
+        "containerPath" : "container:Natofy.xcodeproj",
+        "identifier" : "67BD391D25BE689D00205BFA",
+        "name" : "NatofyTests"
+      }
+    }
+  ],
+  "version" : 1
+}

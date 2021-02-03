@@ -21,5 +21,6 @@ struct TranslateTextEditor: View {
                   self.textToTranslate = ""
                 }
             }
+            .accessibilityIdentifier(AccessibilityIdentifiers.translateInputTextEditor.rawValue)
     }
 }

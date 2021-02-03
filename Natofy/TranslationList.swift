@@ -33,6 +33,7 @@ struct TranslationList: View {
                 }
             }
         }
+        .accessibilityIdentifier(AccessibilityIdentifiers.translateOutputList.rawValue)
     }
 }
 
