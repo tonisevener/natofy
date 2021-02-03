@@ -4,19 +4,19 @@
 version: 2.1
 
 jobs:
-  unit_tests:
-
-    macos:
-      xcode: 12.3.0 # Specify the Xcode version to use
-
-    steps:
-      - checkout
-      - run:
-          name: Run tests
-          command: fastlane scan
-          environment:
-            SCAN_DEVICE: iPhone 12 mini
-            SCAN_SCHEME: Natofy
+#  unit_tests:
+#
+#    macos:
+#      xcode: 12.3.0 # Specify the Xcode version to use
+#
+#    steps:
+#      - checkout
+#      - run:
+#          name: Run tests
+#          command: fastlane scan
+#          environment:
+#            SCAN_DEVICE: iPhone 12 mini
+#            SCAN_SCHEME: Natofy
             
   screenshots:
 
@@ -36,15 +36,15 @@ jobs:
             SCAN_SCHEME: Natofy
       - run:
           name: Compress Artifacts
-          command: tar -cvzf screenshots.tar /tmp/screenshots
+          command: cd tmp ; tar -cvzf screenshots.tar /screenshots
       - store_artifacts:
           path: screenshots.tar
           destination: screenshots
 
 workflows:
-  unit_tests:
-    jobs:
-      - unit_tests
+#  unit_tests:
+#    jobs:
+#      - unit_tests
   screenshots:
     jobs:
       - screenshots
