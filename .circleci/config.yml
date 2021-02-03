@@ -4,7 +4,7 @@
 version: 2.1
 
 jobs:
-  build:
+  unit_tests:
 
     macos:
       xcode: 12.3.0 # Specify the Xcode version to use
@@ -17,3 +17,8 @@ jobs:
           environment:
             SCAN_DEVICE: iPhone 12 mini
             SCAN_SCHEME: Natofy
+
+workflows:
+  unit_tests:
+    jobs:
+      - unit_tests
