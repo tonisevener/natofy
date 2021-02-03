@@ -4,21 +4,21 @@
 version: 2.1
 
 jobs:
-#  unit_tests:
-#
-#    macos:
-#      xcode: 12.3.0 # Specify the Xcode version to use
-#
-#    steps:
-#      - checkout
-#      - run:
-#          name: Run tests
-#          command: fastlane scan
-#          environment:
-#            SCAN_DEVICE: iPhone 12 mini
-#            SCAN_SCHEME: Natofy
-#      - store_test_results:
-#          path: fastlane/test_output/
+  unit_tests:
+
+    macos:
+      xcode: 12.3.0 # Specify the Xcode version to use
+
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: fastlane scan
+          environment:
+            SCAN_DEVICE: iPhone 12 mini
+            SCAN_SCHEME: Natofy
+      - store_test_results:
+          path: fastlane/test_output/
             
   screenshots:
 
@@ -46,9 +46,9 @@ jobs:
           destination: screenshots
 
 workflows:
-#  unit_tests:
-#    jobs:
-#      - unit_tests
+  unit_tests:
+    jobs:
+      - unit_tests
   screenshots:
     jobs:
       - screenshots
