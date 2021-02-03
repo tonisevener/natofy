@@ -38,7 +38,7 @@ jobs:
             SCAN_SCHEME: Natofy
       - run:
           name: Compress Artifacts
-          command: cd /tmp ; tar -cvzf screenshots.tar /screenshots
+          command: cd /tmp ; tar -cvzf screenshots.tar screenshots
       - store_test_results:
           path: fastlane/test_output/
       - store_artifacts:
