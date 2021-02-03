@@ -17,8 +17,29 @@ jobs:
           environment:
             SCAN_DEVICE: iPhone 12 mini
             SCAN_SCHEME: Natofy
+            
+jobs:
+  screenshots:
+
+    macos:
+      xcode: 12.3.0 # Specify the Xcode version to use
+
+    steps:
+      - checkout
+      - run:
+          name: Install xcparse
+          command: brew install chargepoint/xcparse/xcparse
+      - run:
+          name: Run screenshots script
+          command: fastlane ios screenshots
+          environment:
+            SCAN_DEVICE: iPhone 12 mini
+            SCAN_SCHEME: Natofy
 
 workflows:
   unit_tests:
     jobs:
       - unit_tests
+  screenshots:
+    jobs:
+      - screenshots
