@@ -83,6 +83,6 @@ workflows:
           filters:
             branches:
               only:
-                - screenshots-ci
+                - master
     jobs:
       - screenshots
