@@ -27,6 +27,9 @@ jobs:
       - run:
           name: decode WatchProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision \<<< $WatchProfile
+      - run:
+          name: Run fastlane deploy
+          command: fastlane ios deploy-beta
       
   unit_tests:
 
