@@ -11,22 +11,22 @@ jobs:
     steps:
       - run:
           name: decode DistributionCertificate
-          command: base64 -D -o DistributionCertificate.p12 <<< $DistributionCertificate
+          command: base64 -D -o DistributionCertificate.p12 \<<< $DistributionCertificate
       - run:
           name: make Provisioning Profiles directory
           command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
       - run:
           name: decode AppProfile
-          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppProfile.mobileprovision <<< $AppProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppProfile.mobileprovision \<<< $AppProfile
       - run:
           name: decode ActionExtensionProfile
-          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/ActionExtensionProfile.mobileprovision <<< $ActionExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/ActionExtensionProfile.mobileprovision \<<< $ActionExtensionProfile
       - run:
           name: decode WatchExtensionProfile
-          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchExtensionProfile.mobileprovision <<< $WatchExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchExtensionProfile.mobileprovision \<<< $WatchExtensionProfile
       - run:
           name: decode WatchProfile
-          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision <<< $WatchProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision \<<< $WatchProfile
       
   unit_tests:
 
@@ -70,7 +70,7 @@ jobs:
           destination: screenshots
 
 workflows:
-    deploy_beta:
+  deploy_beta:
     jobs:
       - deploy_beta
   unit_tests:
