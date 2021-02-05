@@ -64,11 +64,8 @@ jobs:
           name: decode WatchProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WildcardDevelopmentProfile.mobileprovision \<<< $WildcardDevelopmentProfile
       - run:
-          name: move APIKey into file
-          command: Files/APIKeyFile.txt \<<< $APIKeyFile
-      - run:
           name: decode APIKey
-          command: base64 -D -o ~/Desktop/DecodedFiles\ Files/APIKeyFile.txt
+          command: command: base64 -D -o APIKeyFile.p8 \<<< $APIKeyFile
       - run:
           name: Run fastlane deploy
           command: bundle exec fastlane ios deployBeta
