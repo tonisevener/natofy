@@ -29,8 +29,8 @@ platform :ios do
 
   desc "Deploy beta build"
    lane :deployBeta do |options|
-    gym(scheme: "NatofyRelease")
-    fastlane pilot upload
+    gym(scheme: "Natofy", export_method: "app-store", configuration: "Release", clean: true, output_directory: "build")
+    testflight(ipa: "build/Natofy.ipa", skip_waiting_for_build_processing: true)
   end
 
    desc "Collect screenshots"
