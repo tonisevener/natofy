@@ -31,6 +31,9 @@ jobs:
           name: decode DistributionCertificate
           command: base64 -D -o DistributionCertificate.p12 \<<< $DistributionCertificate
       - run:
+          name: decode DistributionCertificate
+          command: base64 -D -o DevelopmentCertificate.p12 \<<< $DevelopmentCertificate
+      - run:
           name: make Provisioning Profiles directory
           command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
       - run:
@@ -45,6 +48,18 @@ jobs:
       - run:
           name: decode WatchProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision \<<< $WatchProfile
+      - run:
+          name: decode AppProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppDevelopmentProfile.mobileprovision \<<< $AppDevelopmentProfile
+      - run:
+          name: decode ActionExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/ActionExtensionDevelopmentProfile.mobileprovision \<<< $ActionExtensionDevelopmentProfile
+      - run:
+          name: decode WatchExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchExtensionDevelopmentProfile.mobileprovision \<<< $WatchExtensionDevelopmentProfile
+      - run:
+          name: decode WatchProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WildcardDevelopmentProfile.mobileprovision \<<< $WildcardDevelopmentProfile
       - run:
           name: Run fastlane deploy
           command: bundle exec fastlane ios deployBeta
