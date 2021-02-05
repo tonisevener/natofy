@@ -35,7 +35,10 @@ jobs:
           command: base64 -D -o DevelopmentCertificate.p12 \<<< $DevelopmentCertificate
       - run:
           name: make Provisioning Profiles directory
-          command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/ Files/ ~/Desktop/DecodedFiles\
+          command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
+      - run:
+          name: make Files directory
+          command: mkdir -pv ~/Desktop/DecodedFiles\ Files/
       - run:
           name: decode AppProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppProfile.mobileprovision \<<< $AppProfile
@@ -62,10 +65,10 @@ jobs:
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WildcardDevelopmentProfile.mobileprovision \<<< $WildcardDevelopmentProfile
       - run:
           name: move APIKey into file
-          command: Files/APIKeyFile.txt \<<< $APIKeyFile
+          command: Files/APIKeyFile.p8 \<<< $APIKeyFile
       - run:
           name: decode APIKey
-          command: base64 -D -o ~/Desktop/DecodedFiles\ Files/APIKeyFile.txt
+          command: base64 -D -o ~/Desktop/DecodedFiles\ Files/APIKeyFile.p8
       - run:
           name: Run fastlane deploy
           command: bundle exec fastlane ios deployBeta
