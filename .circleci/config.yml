@@ -25,6 +25,8 @@ jobs:
   deploy_beta:
     executor: xcode
     steps:
+      - checkout
+      - install_dependencies
       - run:
           name: decode DistributionCertificate
           command: base64 -D -o DistributionCertificate.p12 \<<< $DistributionCertificate
@@ -43,8 +45,6 @@ jobs:
       - run:
           name: decode WatchProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision \<<< $WatchProfile
-      - checkout
-      - install_dependencies
       - run:
           name: Run fastlane deploy
           command: bundle exec fastlane ios deploy-beta
