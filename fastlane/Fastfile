@@ -22,6 +22,12 @@ platform :ios do
     import_certificate(
       keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
       keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
+      certificate_path: 'DevelopmentCertificate.p12',
+      certificate_password: ENV["CertificatePassword"] || "default"
+    )
+    import_certificate(
+      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
       certificate_path: 'DistributionCertificate.p12',
       certificate_password: ENV["CertificatePassword"] || "default"
     )
