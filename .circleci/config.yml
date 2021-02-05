@@ -4,10 +4,34 @@
 version: 2.1
 
 jobs:
+
+  deploy_beta:
+    macos:
+      xcode: 12.3.0
+    steps:
+      - run:
+          name: decode DistributionCertificate
+          command: base64 -D -o DistributionCertificate.p12 <<< $DistributionCertificate
+      - run:
+          name: make Provisioning Profiles directory
+          command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/
+      - run:
+          name: decode AppProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppProfile.mobileprovision <<< $AppProfile
+      - run:
+          name: decode ActionExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/ActionExtensionProfile.mobileprovision <<< $ActionExtensionProfile
+      - run:
+          name: decode WatchExtensionProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchExtensionProfile.mobileprovision <<< $WatchExtensionProfile
+      - run:
+          name: decode WatchProfile
+          command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision <<< $WatchProfile
+      
   unit_tests:
 
     macos:
-      xcode: 12.3.0 # Specify the Xcode version to use
+      xcode: 12.3.0
 
     steps:
       - checkout
@@ -23,7 +47,7 @@ jobs:
   screenshots:
 
     macos:
-      xcode: 12.3.0 # Specify the Xcode version to use
+      xcode: 12.3.0
 
     steps:
       - checkout
@@ -46,6 +70,9 @@ jobs:
           destination: screenshots
 
 workflows:
+    deploy_beta:
+    jobs:
+      - deploy_beta
   unit_tests:
     jobs:
       - unit_tests
