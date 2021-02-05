@@ -29,9 +29,8 @@ platform :ios do
 
   desc "Deploy beta build"
    lane :deployBeta do |options|
-    sync_code_signing(type: "appstore")
-    build_app(scheme: "Natofy")
-    upload_to_testflight
+    gym(scheme: "NatofyRelease")
+    fastlane pilot upload
   end
 
    desc "Collect screenshots"
