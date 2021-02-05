@@ -22,12 +22,6 @@ platform :ios do
     import_certificate(
       keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
       keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
-      certificate_path: 'DevelopmentCertificate.p12',
-      certificate_password: ENV["CertificatePassword"] || "default"
-    )
-    import_certificate(
-      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
-      keychain_password: ENV["MATCH_KEYCHAIN_PASSWORD"],
       certificate_path: 'DistributionCertificate.p12',
       certificate_password: ENV["CertificatePassword"] || "default"
     )
@@ -36,7 +30,8 @@ platform :ios do
   desc "Deploy beta build"
    lane :deployBeta do |options|
     gym(scheme: "Natofy", export_method: "app-store", configuration: "Release", clean: true, output_directory: "build")
-    testflight(ipa: "build/Natofy.ipa", skip_waiting_for_build_processing: true)
+    api_key = app_store_connect_api_key(key_id: ENV["KeyID"],issuer_id: ENV["IssuerID"],key_filepath: "Files/APIKeyFile.p8")
+    testflight(ipa: "build/Natofy.ipa", skip_waiting_for_build_processing: true, api_key: api_key)
   end
 
    desc "Collect screenshots"
