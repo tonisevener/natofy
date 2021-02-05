@@ -47,7 +47,7 @@ jobs:
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WatchProfile.mobileprovision \<<< $WatchProfile
       - run:
           name: Run fastlane deploy
-          command: bundle exec fastlane ios deploy-beta
+          command: bundle exec fastlane ios deployBeta
       
   unit_tests:
     executor: xcode
