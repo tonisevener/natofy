@@ -35,7 +35,7 @@ jobs:
           command: base64 -D -o DevelopmentCertificate.p12 \<<< $DevelopmentCertificate
       - run:
           name: make Provisioning Profiles directory
-          command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/ Files/ ~/Desktop/DecodedFiles/
+          command: mkdir -pv ~/Library/MobileDevice/Provisioning\ Profiles/ Files/ ~/Desktop/DecodedFiles\
       - run:
           name: decode AppProfile
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/AppProfile.mobileprovision \<<< $AppProfile
