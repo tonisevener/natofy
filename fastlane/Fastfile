@@ -29,7 +29,7 @@ platform :ios do
 
   desc "Deploy beta build"
    lane :deploy-beta do |options|
-    gym --scheme "Natofy"
+    gym
     fastlane pilot upload
   end
 
