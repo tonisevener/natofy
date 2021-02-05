@@ -65,7 +65,7 @@ jobs:
           command: base64 -D -o ~/Library/MobileDevice/Provisioning\ Profiles/WildcardDevelopmentProfile.mobileprovision \<<< $WildcardDevelopmentProfile
       - run:
           name: decode APIKey
-          command: command: base64 -D -o APIKeyFile.p8 \<<< $APIKeyFile
+          command: base64 -D -o APIKeyFile.p8 \<<< $APIKeyFile
       - run:
           name: Run fastlane deploy
           command: bundle exec fastlane ios deployBeta
