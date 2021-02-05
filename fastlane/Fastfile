@@ -30,7 +30,7 @@ platform :ios do
   desc "Deploy beta build"
    lane :deployBeta do |options|
     gym(scheme: "Natofy", export_method: "app-store", configuration: "Release", clean: true, output_directory: "build")
-    api_key = app_store_connect_api_key(key_id: ENV["KeyID"],issuer_id: ENV["IssuerID"],key_filepath: "Files/APIKeyFile.p8")
+    api_key = app_store_connect_api_key(key_id: ENV["KeyID"],issuer_id: ENV["IssuerID"],key_filepath: "~/Desktop/DecodedFiles/APIKeyFile.p8")
     testflight(ipa: "build/Natofy.ipa", skip_waiting_for_build_processing: true, api_key: api_key)
   end
 
