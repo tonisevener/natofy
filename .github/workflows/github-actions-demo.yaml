@@ -21,13 +21,22 @@ jobs:
         run: | 
           PREFIX='releases/'
           LASTRELEASETAG=$(git tag -l $PREFIX* --sort=-creatordate | head -n 1)
-          LASTBUILD=${LASTRELEASETAG:9}
-          LASTBUILDBETTER=${LASTBUILD%??} #temp
-          NEXTBUILD=$((LASTBUILDBETTER + 1))
-          echo "next_build=$NEXTBUILD" >> $GITHUB_ENV
+          LASTRELEASESHA=$(git rev-parse $LASTRELEASETAG)
+          CURRENTSHA=$(git rev-parse origin/master)
+          if [ LASTRELEASESHA != CURRENTSHA ]; then
+            LASTBUILD=${LASTRELEASETAG:9}
+            LASTBUILDBETTER=${LASTBUILD%??} #temp
+            NEXTBUILD=$((LASTBUILDBETTER + 1))
+            echo "next_build=$NEXTBUILD" >> $GITHUB_ENV
+          fi
       - name: Print New Build Number
         run: | 
-          NEWTAG="releases/${{ env.next_build }}"
-          git tag ${NEWTAG}
-          git push origin ${NEWTAG}
+          if [ -z "${{ env.next_build }}" ]; then 
+            echo "No next build number determined. Exiting."; 
+          else 
+            NEWTAG="releases/${{ env.next_build }}"
+            git tag ${NEWTAG}
+            git push origin ${NEWTAG}
+            echo "Created and pushed new tag ${NEWTAG}"
+          fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
