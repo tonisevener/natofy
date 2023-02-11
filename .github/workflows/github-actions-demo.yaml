@@ -22,7 +22,7 @@ jobs:
           PREFIX='releases/'
           LASTRELEASETAG=$(git tag -l $PREFIX* --sort=-creatordate | head -n 1)
           LASTRELEASESHA=$(git rev-parse $LASTRELEASETAG)
-          CURRENTSHA=$(git rev-parse origin/master)
+          CURRENTSHA=$(git rev-parse HEAD) #origin/master?
           if [ LASTRELEASESHA != CURRENTSHA ]; then
             LASTBUILD=${LASTRELEASETAG:9}
             LASTBUILDBETTER=${LASTBUILD%??} #temp
