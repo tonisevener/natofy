@@ -22,5 +22,7 @@ jobs:
           LASTBUILD=${LASTRELEASETAG:9}
           LASTBUILDBETTER=${LASTBUILD%??} #temp
           NEXTBUILD=$((LASTBUILDBETTER + 1))
-          echo $NEXTBUILD
+          echo "::set-env name=NEXTBUILD::$NEXTBUILD"
+      - name: Print New Build Number
+        run: echo $NEXTBUILD
       - run: echo "🍏 This job's status is ${{ job.status }}."
