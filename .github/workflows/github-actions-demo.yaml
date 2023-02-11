@@ -15,4 +15,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Write out last release tag
+        run: |
+          prefix = "releases/"
+          lastTag = git tag -l ${prefix}* --sort=-creatordate | head -n 1
+          echo lastTag[prefix.length..-1].to_i
       - run: echo "🍏 This job's status is ${{ job.status }}."
