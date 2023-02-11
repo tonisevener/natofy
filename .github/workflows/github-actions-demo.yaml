@@ -26,5 +26,8 @@ jobs:
           NEXTBUILD=$((LASTBUILDBETTER + 1))
           echo "next_build=$NEXTBUILD" >> $GITHUB_ENV
       - name: Print New Build Number
-        run: echo "${{ env.next_build }}"
+        run: | 
+          NEWTAG="releases/${{ env.next_build }}"
+          git tag ${NEWTAG} master
+          git push origin ${NEWTAG}
       - run: echo "🍏 This job's status is ${{ job.status }}."
