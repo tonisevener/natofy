@@ -25,7 +25,7 @@ jobs:
           CURRENTSHA=$(git rev-parse HEAD) #origin/master?
           echo "${LASTRELEASESHA}"
           echo "${CURRENTSHA}"
-          if [ LASTRELEASESHA != CURRENTSHA ]; then
+          if [ ${LASTRELEASESHA} != ${CURRENTSHA} ]; then
             LASTBUILD=${LASTRELEASETAG:9}
             LASTBUILDBETTER=${LASTBUILD%??} #temp
             NEXTBUILD=$((LASTBUILDBETTER + 1))
