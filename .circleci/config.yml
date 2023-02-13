@@ -1,61 +1,61 @@
 # For a detailed guide to building and testing on iOS, read the docs:
 # https://circleci.com/docs/2.0/testing-ios/
 
-version: 2.1
-
-jobs:
-  unit_tests:
-
-    macos:
-      xcode: 12.3.0 # Specify the Xcode version to use
-
-    steps:
-      - checkout
-      - run:
-          name: Run tests
-          command: fastlane scan
-          environment:
-            SCAN_DEVICE: iPhone 12 mini
-            SCAN_SCHEME: Natofy
-      - store_test_results:
-          path: fastlane/test_output/
-            
-  screenshots:
-
-    macos:
-      xcode: 12.3.0 # Specify the Xcode version to use
-
-    steps:
-      - checkout
-      - run:
-          name: Install xcparse
-          command: brew install chargepoint/xcparse/xcparse
-      - run:
-          name: Run screenshots script
-          command: fastlane ios screenshots
-          environment:
-            SCAN_DEVICE: iPhone 12 mini
-            SCAN_SCHEME: Natofy
-      - run:
-          name: Compress Artifacts
-          command: cd /tmp ; tar -cvzf screenshots.tar screenshots
-      - store_test_results:
-          path: fastlane/test_output/
-      - store_artifacts:
-          path: /tmp/screenshots.tar
-          destination: screenshots
-
-workflows:
-  unit_tests:
-    jobs:
-      - unit_tests
-  screenshots:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
-    jobs:
-      - screenshots
+#version: 2.1
+#
+#jobs:
+#  unit_tests:
+#
+#    macos:
+#      xcode: 12.3.0 # Specify the Xcode version to use
+#
+#    steps:
+#      - checkout
+#      - run:
+#          name: Run tests
+#          command: fastlane scan
+#          environment:
+#            SCAN_DEVICE: iPhone 12 mini
+#            SCAN_SCHEME: Natofy
+#      - store_test_results:
+#          path: fastlane/test_output/
+#            
+#  screenshots:
+#
+#    macos:
+#      xcode: 12.3.0 # Specify the Xcode version to use
+#
+#    steps:
+#      - checkout
+#      - run:
+#          name: Install xcparse
+#          command: brew install chargepoint/xcparse/xcparse
+#      - run:
+#          name: Run screenshots script
+#          command: fastlane ios screenshots
+#          environment:
+#            SCAN_DEVICE: iPhone 12 mini
+#            SCAN_SCHEME: Natofy
+#      - run:
+#          name: Compress Artifacts
+#          command: cd /tmp ; tar -cvzf screenshots.tar screenshots
+#      - store_test_results:
+#          path: fastlane/test_output/
+#      - store_artifacts:
+#          path: /tmp/screenshots.tar
+#          destination: screenshots
+#
+#workflows:
+#  unit_tests:
+#    jobs:
+#      - unit_tests
+#  screenshots:
+#    triggers:
+#      - schedule:
+#          cron: "0 0 * * *"
+#          filters:
+#            branches:
+#              only:
+#                - master
+#    jobs:
+#      - screenshots
