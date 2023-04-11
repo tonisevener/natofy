@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - master
+      - simple-latest-beta-tag
 jobs:
   Push-Latest-Beta-Tag:
     runs-on: ubuntu-latest
