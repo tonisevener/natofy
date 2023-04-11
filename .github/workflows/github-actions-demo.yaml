@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Checkout master
-        run: git checkout origin/master
       - name: Get tags
         run: git fetch --tags origin
       - name: Determine next release number if there is a new SHA
@@ -25,6 +23,7 @@ jobs:
             git push origin :refs/tags/${LATESTBETATAG}
             echo "Checking out master"
             git checkout master
+            git pull origin master
             echo "Creating new tag and pushing"
             git tag ${LATESTBETATAG}
             git push --tags
