@@ -2,35 +2,33 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Push-Release-Tag:
+  Push-Latest-Beta-Tag:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Checkout master
+        run: git checkout origin/master
       - name: Get tags
         run: git fetch --tags origin
       - name: Determine next release number if there is a new SHA
         run: | 
-          PREFIX='releases/'
-          LASTRELEASETAG=$(git tag -l $PREFIX* --sort=-creatordate | head -n 1)
-          LASTRELEASESHA=$(git rev-parse $LASTRELEASETAG)
+          LATESTBETATAG='latest_beta'
+          LASTBETASHA=$(git rev-parse $LATESTBETATAG)
           CURRENTSHA=$(git rev-parse HEAD) #origin/master?
           echo "${LASTRELEASESHA}"
           echo "${CURRENTSHA}"
-          if [ ${LASTRELEASESHA} != ${CURRENTSHA} ]; then
-            LASTBUILD=${LASTRELEASETAG:9}
-            LASTBUILDBETTER=${LASTBUILD%??} #temp
-            NEXTBUILD=$((LASTBUILDBETTER + 1))
-            echo "next_build=$NEXTBUILD" >> $GITHUB_ENV
-          fi
-      - name: Tag new release number if needed
-        run: | 
-          if [ -z "${{ env.next_build }}" ]; then 
-            echo "No next build number passed through, meaning there is no new SHA since the last release tag. Exiting.";
-          else 
-            NEWTAG="releases/${{ env.next_build }}"
-            git tag ${NEWTAG}
-            git push origin ${NEWTAG}
-            echo "Created and pushed new tag ${NEWTAG}"
+          if [ ${LASTBETASHA} != ${CURRENTSHA} ]; then
+            echo "New commit on master. Moving latest_beta tag."
+            echo "Deleting old tag and pushing"
+            git tag -d ${LATESTBETATAG}
+            git push origin :refs/tags/${LATESTBETATAG}
+            echo "Checking out master"
+            git checkout master
+            echo "Creating new tag and pushing"
+            git tag ${LATESTBETATAG}
+            git push --tags
+          else
+            echo "No new commits determined. Exiting."
           fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
