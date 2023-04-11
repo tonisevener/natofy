@@ -16,7 +16,7 @@ jobs:
         run: | 
           LATESTBETATAG='latest_beta'
           LASTBETASHA=$(git rev-parse $LATESTBETATAG)
-          CURRENTSHA=$(git rev-parse HEAD) #origin/master?
+          CURRENTSHA=$(git rev-parse HEAD) #origin/simple-latest-beta-tag?
           echo "${LASTRELEASESHA}"
           echo "${CURRENTSHA}"
           if [ ${LASTBETASHA} != ${CURRENTSHA} ]; then
@@ -24,9 +24,9 @@ jobs:
             echo "Deleting old tag and pushing"
             git tag -d ${LATESTBETATAG}
             git push origin :refs/tags/${LATESTBETATAG}
-            echo "Checking out master"
-            git checkout master
-            git pull origin master
+            echo "Checking out simple-latest-beta-tag"
+            git checkout simple-latest-beta-tag
+            git pull origin simple-latest-beta-tag
             echo "Creating new tag and pushing"
             git tag ${LATESTBETATAG}
             git push --tags
