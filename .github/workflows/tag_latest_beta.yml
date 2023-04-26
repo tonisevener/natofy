@@ -5,9 +5,8 @@ name: Tag Latest Beta
 #    - cron: '25 22 * * *' # run at 10:22PM UTC
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '0 10 * * *' # run at 10AM UTC
 
 jobs:
   Tag-Latest-Beta:
