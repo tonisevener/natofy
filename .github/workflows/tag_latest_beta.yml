@@ -1,8 +1,13 @@
 name: Tag Latest Beta
 
+# on:
+#  schedule:
+#    - cron: '25 22 * * *' # run at 10:22PM UTC
+
 on:
-  schedule:
-    - cron: '25 22 * * *' # run at 10:22PM UTC
+  push:
+    branches:
+      - master
 
 jobs:
   Tag-Latest-Beta:
