@@ -25,7 +25,7 @@ jobs:
           LATESTBETATAG='latest_beta'
           LASTBETASHA=$(git rev-parse $LATESTBETATAG)
           CURRENTSHA=$(git rev-parse HEAD) #origin/master?
-          echo "${LASTRELEASESHA}"
+          echo "${LASTBETASHA}"
           echo "${CURRENTSHA}"
           if [ ${LASTBETASHA} != ${CURRENTSHA} ]; then
             echo "New commit on master. Moving latest_beta tag."
