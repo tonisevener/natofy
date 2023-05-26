@@ -6,7 +6,7 @@ name: Tag Latest Beta
 
 on:
   schedule:
-    - cron: '50 22 * * *' # run at 10AM UTC
+    - cron: '50 13 * * *' # run at 10AM UTC
   workflow_dispatch: # adding the workflow_dispatch so it can be triggered manually
 
 jobs:
